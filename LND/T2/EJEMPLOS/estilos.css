@@ -1,0 +1,18 @@
+/*esto es un comentario en css*/
+/* quitamos el borde a todos los elementos de la página*/
+* { border: 0; }
+/* cambiamos el color del texto de todos los párrafos a verde*/
+p { color: green; }
+/* definimos una clase propia, sólo aplicable mediante class="azul" */
+.azul { color: blue; }
+.conBorde { border: 1px solid black; } /*poner un borde de 1 pixedl de ancho, sólido y de color negro*/
+/* descendientes sólo a aquellos elementos li que estén anidados en un
+elemento ul les será aplicado el cambio de color a magenta y el texto
+subrayado*/
+ul li { color: magenta; text-decoration: underline; }
+/*id sólo aquél elemento que tenga el valor del id será cambiado*/
+#parrafoId {
+    color: purple;
+    text-decoration: underline;
+    text-transform: uppercase;
+    }

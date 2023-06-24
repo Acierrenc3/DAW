@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<basededatos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="basedatos.xsd">
+    <!--PIEZAS-->
+    <piezas>
+        <pieza>Modular</pieza>
+        <codigo>78</codigo>
+        <nombre>Resorte Conico</nombre>
+    </piezas>
+    <piezas>
+        <pieza>Central</pieza>
+        <codigo>03</codigo>
+        <nombre>Encendedor Motor</nombre>
+    </piezas>
+    <!--PROVEEDORES-->
+    <proveedores>
+        <proveedor>Hyundai</proveedor>
+        <id>308</id>
+        <nombre2>Hyundai Motors</nombre2>
+    </proveedores>
+    <proveedores>
+        <proveedor>Renault</proveedor>
+        <id>002</id>
+        <nombre2>Casa Renault</nombre2>
+    </proveedores>
+    <!--SUMINISTROS-->
+    <suministros>
+        <suministro>Si</suministro>
+        <codigo_pieza>03</codigo_pieza>
+        <idProveedor>308</idProveedor>
+        <precio moneda="EUR">465</precio>
+    </suministros>
+    <suministros>
+        <suministro>Si</suministro>
+        <codigo_pieza>78</codigo_pieza>
+        <idProveedor>002</idProveedor>
+        <precio moneda="EUR">320</precio>
+    </suministros>
+</basededatos>

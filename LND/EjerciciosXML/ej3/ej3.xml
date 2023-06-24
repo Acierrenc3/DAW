@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<!DOCTYPE carta SYSTEM "ej3.dtd">-->
+<carta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ej3.xsd">
+    <prod precio="5.95" cal="650">
+        <nombre>Gofres Belgas</nombre>
+        <descripcion>Dos de nuestros famosos....</descripcion>
+    </prod>
+    <prod precio="7.95" cal="900">
+        <nombre>Gofres Belgas con Fresas</nombre>
+        <descripcion>Ligeros Gofres</descripcion>
+    </prod>
+</carta>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1" xml:lang="es">
+    <xs:element name="Ikea_Tenerife">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="proveedores" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="nro_pro" type="xs:positiveInteger"></xs:element>
+                        <xs:element name="nom_p" type="xs:string"></xs:element>
+                        <xs:element name="categoria" type="xs:string"></xs:element>
+                        <xs:element name="ciudad_p" type="xs:string"></xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="items" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="nro_i" type="xs:positiveInteger"></xs:element>
+                        <xs:element name="descripcion_i" type="xs:string"></xs:element>
+                        <xs:element name="ciudad_i" type="xs:string"></xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="pedidos" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="nro_pe" type="xs:positiveInteger"></xs:element>
+                        <xs:element name="nro_c" type="xs:positiveInteger"></xs:element>
+                        <xs:element name="nro_i" type="xs:positiveInteger"></xs:element>
+                        <xs:element name="nro_pro" type="xs:positiveInteger"></xs:element>
+                        <xs:element name="cantidad" type="xs:positiveInteger"></xs:element>
+                        <xs:element name="precio" type="xs:positiveInteger"></xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="clientes" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="nro_c" type="xs:positiveInteger"></xs:element>
+                        <xs:element name="nom_c" type="xs:string"></xs:element>
+                        <xs:element name="ciudad_c" type="xs:string"></xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    </xs:element>
+</xs:schema>

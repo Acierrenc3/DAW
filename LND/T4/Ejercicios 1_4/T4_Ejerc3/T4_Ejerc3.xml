@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Universidad SYSTEM "ejerc3.dtd">
+<Universidad>
+    <!--FACULTADES-->
+    <facultades>
+        <codigo>F12</codigo>
+        <nombre>Derecho</nombre>
+    </facultades>
+    <facultades>
+        <codigo>F05</codigo>
+        <nombre>Económicas</nombre>
+    </facultades>
+    <!--INVESTIGADORES-->
+    <investigadores>
+        <DNI>42245678W</DNI>
+        <NomApell>Sergio Agüero</NomApell>
+        <facultad>Derecho</facultad>
+    </investigadores>
+    <investigadores>
+        <DNI>79045642Z</DNI>
+        <NomApell>Lionel Messi</NomApell>
+        <facultad>Economicas</facultad>
+    </investigadores>
+    <!--EQUIPOS-->
+    <equipos>
+        <NumSerie>B-7845-Z</NumSerie>
+        <nombre>Sobremesa</nombre>
+        <facultad>Derecho</facultad>
+    </equipos>
+    <equipos>
+        <NumSerie>Z-5487-B</NumSerie>
+        <nombre>Portatil</nombre>
+        <facultad>Economicas</facultad>
+    </equipos>
+    <!--RESERVAS-->
+    <reservas>
+        <DNI>79645623F</DNI>
+        <NumSerie>B45678S</NumSerie>
+        <comienzo>06/09/2012</comienzo>
+        <fin>10/10/2020</fin>
+    </reservas>
+    <reservas>
+        <DNI>79064273S</DNI>
+        <NumSerie>A45678X</NumSerie>
+        <comienzo>01/01/2000</comienzo>
+        <fin>01/01/2022</fin>
+    </reservas>
+</Universidad>

@@ -1,0 +1,3 @@
+Paco,m,65
+Paquita,f,49
+Paquito,M,49

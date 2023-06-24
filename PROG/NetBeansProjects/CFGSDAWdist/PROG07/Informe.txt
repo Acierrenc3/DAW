@@ -1,0 +1,72 @@
+
+El ejercicio presentaba varios errores:
+
+1. El programa no disponía de Getters y Setters, por lo cual no aplicaba los parámetros (Punto 1)
+2. Al ejecutar el programa, se veía que la vida de los ENANOS no disminuía (Punto 2)
+3. También añadí mensajes para que, cuando una raza aliada muera, esta no siga atacando (Punto 3)
+
+== PROGRAMA EN FUNCIONAMIENTO SIN ERRORES ==
+
+EMPEZAMOS ... 
+Los enanos tienen una vida de:  50
+Los elfos tienen una vida de:  100
+Los orcos tienen una vida de:  300
+
+
+COMIENZA LA BATALLA 1
+
+
+Los enanos han realizado un ataque de: 0
+Los elfos han realizado un ataque de: 20
+Los orcos han realizado un ataque de: 40
+
+
+Los enanos tienen una vida de:  10
+Los elfos tienen una vida de:  60
+Los orcos tienen una vida de:  280
+
+ENTER PARA LA SIGUIENTE BATALLA
+
+COMIENZA LA BATALLA 2
+
+
+Los enanos han realizado un ataque de: 20
+Los elfos han realizado un ataque de: 20
+Los orcos han realizado un ataque de: 0
+
+
+Los enanos tienen una vida de:  10
+Los elfos tienen una vida de:  60
+Los orcos tienen una vida de:  240
+
+ENTER PARA LA SIGUIENTE BATALLA
+
+COMIENZA LA BATALLA 3
+
+
+Los enanos han realizado un ataque de: 20
+Los elfos han realizado un ataque de: 0
+Los orcos han realizado un ataque de: 40
+
+
+Los enanos tienen una vida de:  0
+Los elfos tienen una vida de:  20
+Los orcos tienen una vida de:  220
+
+ENTER PARA LA SIGUIENTE BATALLA
+
+COMIENZA LA BATALLA 4
+
+La raza de los Enanos ha sido derrotada
+Los elfos han realizado un ataque de: 0
+Los orcos han realizado un ataque de: 40
+
+ *** GANAN LOS MALOS  **** 
+
+Los enanos tienen una vida de:  0
+Los elfos tienen una vida de:  0
+Los orcos tienen una vida de:  220
+
+ENTER PARA LA SIGUIENTE BATALLA
+
+BUILD SUCCESSFUL (total time: 20 seconds)

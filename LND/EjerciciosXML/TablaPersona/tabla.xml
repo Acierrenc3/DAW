@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="tabla.xsl"?>
+<personas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="tabla.xsd">
+    <fechas>
+        <fecha>20/07/15</fecha>
+        <fecha>28/07</fecha>
+        <fecha>09/08</fecha>
+        <fecha>22/08</fecha>
+        <fecha>25/08</fecha>
+    </fechas>
+    <persona nombre="Anthony">
+        <incomes>
+            <income>200</income>
+            <income>0</income>
+            <income>0</income>
+            <income>40</income>
+            <income>0</income>
+        </incomes>
+        <outcomes>
+            <outcome>50</outcome>
+            <outcome>100</outcome>
+            <outcome>50</outcome>
+            <outcome>0</outcome>
+            <outcome>20</outcome>
+        </outcomes>
+    </persona>
+    <persona nombre="Lionel">
+        <incomes>
+            <income>0</income>
+            <income>100</income>
+            <income>0</income>
+            <income>0</income>
+            <income>0</income>
+        </incomes>
+        <outcomes>
+            <outcome>0</outcome>
+            <outcome>0</outcome>
+            <outcome>80</outcome>
+            <outcome>110</outcome>
+            <outcome>0</outcome>
+        </outcomes>
+    </persona>
+</personas>

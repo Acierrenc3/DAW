@@ -1,0 +1,14 @@
+<!ELEMENT Universidad (facultades*, investigadores*, equipos*, reservas*) >
+<!ELEMENT facultades (codigo, nombre)>
+<!ELEMENT investigadores (DNI, NomApell*, facultad*)>
+<!ELEMENT equipos (NumSerie, nombre*, facultad*)>
+<!ELEMENT reservas (DNI, NumSerie, comienzo, fin)>
+
+<!ELEMENT codigo (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT DNI (#PCDATA)>
+<!ELEMENT NomApell (#PCDATA)>
+<!ELEMENT facultad (#PCDATA)>
+<!ELEMENT NumSerie (#PCDATA)>
+<!ELEMENT comienzo (#PCDATA)>
+<!ELEMENT fin (#PCDATA)>

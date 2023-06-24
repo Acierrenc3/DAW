@@ -1,0 +1,61 @@
+
+.titulo{
+    color: #f72585;
+    text-align: center;
+}
+.marco{
+    width: 100%;
+    height: 500px;
+    border: 1px solid #f72585;
+}
+.centrar{
+    text-align: center;
+}
+.boton{
+    background-color: azure;
+    border: 2px solid #457b9d;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+}
+.boton:hover{
+    background-color: #457b9d;
+    color: white;
+}
+
+
+/* *{
+    margin: 0;
+    padding: 0;
+}
+
+#titulo_principal{
+    color: #f72585;
+    text-align: center;
+    margin: 15px;
+}
+
+h2{
+    color: #3f37c9;
+}
+
+p{
+    color: #457b9d;
+}
+
+/*Clase de CSS*/
+/*
+.tarjeta{
+    border: 10px solid #560bad;
+    background-color:  #f1faee;
+    text-align: center;
+    margin: 15px 400px;
+    padding: 15px;
+}
+.titulo_creador{
+    color: #f72585;
+}
+a{
+    text-decoration: none;
+}
+*/

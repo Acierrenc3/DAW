@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alumnos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="Alumno2.xsd">
+
+    <alumno dni="11111111A">
+        <nombre>Antonio Pérez</nombre>
+        <direccion>
+            <calle>Calle Fuente</calle>
+            <numero>4</numero>
+            <ciudad>Jabugo</ciudad>
+            <provincia>Huelva</provincia>
+        </direccion>
+        <telefonos>
+            <fijo>987542658</fijo>
+        </telefonos>
+    </alumno>
+
+    <alumno dni="22222222B">
+        <nombre>Ana Pérez</nombre>
+        <direccion>
+            <calle>Calle Fuente</calle>
+            <numero>4</numero>
+            <ciudad>Jabugo</ciudad>
+            <provincia>Huelva</provincia>
+        </direccion>
+        <sexo>M</sexo>
+        <edad>25</edad>
+        <telefonos>
+            <fijo>245368742</fijo>
+        </telefonos>
+    </alumno>
+
+    <alumno dni="33333333B">
+        <nombre>Armando Ronson</nombre>
+        <direccion>
+            <calle>Calle Fuente</calle>
+            <numero>4</numero>
+            <ciudad>Jabugo</ciudad>
+            <provincia>Huelva</provincia>
+        </direccion>
+        <sexo>M</sexo>
+        <telefonos>
+            <fijo>245368742</fijo>
+            <movil>568423585</movil>
+        </telefonos>
+    </alumno>
+
+    <alumno dni="44444444B">
+        <nombre>Pepe Armando</nombre>
+        <direccion>
+            <calle>Calle Fuente</calle>
+            <numero>4</numero>
+            <ciudad>Jabugo</ciudad>
+            <provincia>Huelva</provincia>
+        </direccion>
+        <edad>18</edad>
+        <telefonos>
+            <fijo>245368742</fijo>
+        </telefonos>
+    </alumno>
+
+</alumnos>

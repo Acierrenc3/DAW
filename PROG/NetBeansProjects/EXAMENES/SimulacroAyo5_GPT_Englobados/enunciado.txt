@@ -1,0 +1,7 @@
+Se pide desarrollar un programa en Java para una tienda en línea que permita gestionar productos y clientes mediante la manipulación de archivos de texto. El programa debe contar con una clase Producto que tenga nombre, descripción, precio y categoría, y una clase Cliente que tenga nombre, edad y género.
+
+La clase Tienda tendrá una lista de productos y una lista de clientes, y permitirá agregar, eliminar y listar los productos y clientes disponibles. Además, se deberá implementar la funcionalidad de buscar un producto por su nombre, y la de buscar un cliente por su nombre y mostrar su información.
+
+El programa deberá tener un menú por consola que permita al usuario seleccionar si desea agregar, eliminar, buscar o listar productos o clientes, y que se repita hasta que el usuario decida salir del programa.
+
+Se requerirá la implementación adecuada de la programación orientada a objetos, incluyendo el uso de herencia y polimorfismo para la creación de las clases Producto y Cliente, así como la manipulación adecuada de los archivos de texto para la lectura y escritura de los datos de productos y clientes. También se requerirá la implementación de validaciones en el ingreso de datos, de modo que se controle que el precio del producto sea mayor que cero, y que se solicite al usuario que ingrese nuevamente los datos si alguno de los valores ingresados es incorrecto. Se valorará la implementación correcta de la lógica de la tienda en el método main de la clase Principal y la usabilidad del programa en cuanto a la interacción con el usuario.

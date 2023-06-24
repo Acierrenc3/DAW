@@ -1,0 +1,22 @@
+<!ELEMENT Hospitales (Hospital*, Sala*, Plantilla*, Ocupacion*, Doctor*, Enfermo*) >
+<!ELEMENT Hospital (nombre, direccion, telefono, num_camas)>
+<!ELEMENT Sala (hospital_cod*, sala_cod*)>
+<!ELEMENT Plantilla (hospital_cod*, sala_cod*, empleado_num*)>
+<!ELEMENT Ocupacion (inscripcion, hospital_cod*, sala_cod*, cama)>
+<!ELEMENT Doctor (hospital_cod, doctor_num, apellido+, especialidad)>
+<!ELEMENT Enfermo (inscripcion, apellido+, direccion, s, nss)>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT num_camas (#PCDATA)>
+<!ELEMENT inscripcion (#PCDATA)>
+<!ELEMENT hospital_cod (#PCDATA)>
+<!ELEMENT sala_cod (#PCDATA)>
+<!ELEMENT empleado_num (#PCDATA)>
+<!ELEMENT cama (#PCDATA)>
+<!ELEMENT doctor_num (#PCDATA)>
+<!ELEMENT apellido (#PCDATA)>
+<!ELEMENT especialidad (#PCDATA)>
+<!ELEMENT s (#PCDATA)>
+<!ELEMENT nss (#PCDATA)>

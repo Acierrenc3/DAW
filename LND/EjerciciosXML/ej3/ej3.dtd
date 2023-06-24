@@ -1,0 +1,10 @@
+<!ELEMENT carta (prod*)>
+<!ELEMENT prod (nombre*, descripcion*)>
+
+
+<!ATTLIST prod precio CDATA #REQUIRED>
+<!ATTLIST prod cal CDATA #REQUIRED>
+
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>

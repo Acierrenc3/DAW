@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="EjPepeLluyot.xsl"?>
+<empresa>
+<datos>
+    <nombre>Muebles Pepe</nombre>
+    <cif>A12345678</cif>
+    <localidad>Arico </localidad>
+    <provincia>S/C de Tenerife</provincia>
+    <telefono>922000000</telefono>
+    <telefono>922000001</telefono>
+    <fax>922000002</fax>
+    <email>direccion@mueblespepe.net</email>
+    <director>123</director>
+    <web>https://www.mueblespepe.com</web>
+    <logo>4Cb2.gif</logo>
+</datos>
+<sedes>
+    <sede num="1">
+        <datossede>
+            <direccion>Plaza Weyler,  38</direccion>
+            <localidad>S/C de Tenerife</localidad>
+            <provincia>S/C de Tenerife</provincia>
+            <cp>38002</cp>
+            <telefono>922546789</telefono>
+        </datossede>
+        <responsable>001</responsable>
+        <trabajador>002</trabajador>
+        <trabajador>003</trabajador>
+        <trabajador>004</trabajador>
+        <trabajador>005</trabajador>
+        <trabajador>006</trabajador>
+        <trabajador>007</trabajador>
+        <trabajador>008</trabajador>
+        <trabajador>009</trabajador>
+    </sede>
+    <sede num="2">
+        <datossede>
+            <direccion>Avda Trinidad, 6</direccion>
+            <localidad>La Laguna</localidad>
+            <provincia>S/C de Tenerife</provincia>
+            <cp>38005</cp>
+            <telefono>922546786</telefono>
+        </datossede>
+        <responsable>010</responsable>
+        <trabajador>011</trabajador>
+        <trabajador>012</trabajador>
+    </sede>
+    <sede num="3">
+        <datossede>
+            <direccion>C/ La paz,  1</direccion>
+            <localidad>Adeje</localidad>
+            <provincia>S/C de Tenerife</provincia>
+            <cp>38002</cp>
+            <telefono>922546788</telefono>
+        </datossede>
+        <responsable>013</responsable>
+        <trabajador>014</trabajador>
+        <trabajador>015</trabajador>
+    </sede>
+</sedes>
+<empleados>
+    <empleado cod="001">
+        <nombre>Ayoze</nombre>
+        <apellido1>Pestano</apellido1>
+        <apellido2>De la Rosa</apellido2>
+        <categoria_nombre>A</categoria_nombre>
+    </empleado>
+    <empleado cod="002">
+        <nombre>Alberto</nombre>
+        <apellido1>Lluyot</apellido1>
+        <apellido2>Gonzalez</apellido2>
+        <categoria_nombre>>B</categoria_nombre>
+    </empleado>
+    <empleado cod="003">
+        <nombre>Rosa</nombre>
+        <apellido1>Lluyot</apellido1>
+        <apellido2>Gonzalez</apellido2>
+        <categoria_nombre>>C</categoria_nombre>
+    </empleado>
+    <empleado cod="004">
+        <nombre>Kevin</nombre>
+        <apellido1>Lluyot</apellido1>
+        <apellido2>Gonzalez</apellido2>
+        <categoria_nombre>>C</categoria_nombre>
+    </empleado>
+    <empleado cod="005">
+        <nombre>Marcelo</nombre>
+        <apellido1>Lluyot</apellido1>
+        <apellido2>Gonzalez</apellido2>
+        <categoria_nombre>>C</categoria_nombre>
+    </empleado>
+    <empleado cod="006">
+        <nombre>John</nombre>
+        <apellido1>Lluyot</apellido1>
+        <apellido2>Gonzalez</apellido2>
+        <categoria_nombre>>D</categoria_nombre>
+    </empleado>
+    <empleado cod="007">
+        <nombre>Gabriel</nombre>
+        <apellido1>Lluyot</apellido1>
+        <apellido2>Gonzalez</apellido2>
+        <categoria_nombre>>C</categoria_nombre>
+    </empleado>
+    <empleado cod="008">
+        <nombre>Alicia</nombre>
+        <apellido1>Lluyot</apellido1>
+        <apellido2>Gonzalez</apellido2>
+        <categoria_nombre>>C</categoria_nombre>
+    </empleado>
+    <empleado cod="009">
+        <nombre>Paula</nombre>
+        <apellido1>Lluyot</apellido1>
+        <apellido2>Gonzalez</apellido2>
+        <categoria_nombre>>C</categoria_nombre>
+    </empleado>
+    <empleado cod="010">
+        <nombre>Azucena</nombre>
+        <apellido1>Lluyot</apellido1>
+        <apellido2>Gonzalez</apellido2>
+        <categoria_nombre>>A</categoria_nombre>
+    </empleado>
+    <empleado cod="011">
+        <nombre>Mario</nombre>
+        <apellido1>Lluyot</apellido1>
+        <apellido2>Gonzalez</apellido2>
+        <categoria_nombre>>D</categoria_nombre>
+    </empleado>
+    <empleado cod="012">
+        <nombre>Brian</nombre>
+        <apellido1>Lluyot</apellido1>
+        <apellido2>Gonzalez</apellido2>
+        <categoria_nombre>>D</categoria_nombre>
+    </empleado>
+    <empleado cod="013">
+        <nombre>Alberto</nombre>
+        <apellido1>Lluyot</apellido1>
+        <apellido2>Gonzalez</apellido2>
+        <categoria_nombre>>A</categoria_nombre>
+    </empleado>
+    <empleado cod="014">
+        <nombre>Pedro</nombre>
+        <apellido1>Lluyot</apellido1>
+        <apellido2>Gonzalez</apellido2>
+        <categoria_nombre>>B</categoria_nombre>
+    </empleado>
+    <empleado cod="015">
+        <nombre>Lorena</nombre>
+        <apellido1>Lluyot</apellido1>
+        <apellido2>Gonzalez</apellido2>
+        <categoria_nombre>>D</categoria_nombre>
+    </empleado>
+</empleados>
+<categorias>
+    <categoria tipo="A">
+        <nombre>Director</nombre>
+        <sueldo>5800€</sueldo>
+    </categoria>
+    <categoria tipo="B">
+        <nombre>Encargado</nombre>
+        <sueldo>2200€</sueldo>
+    </categoria>
+    <categoria tipo="C">
+        <nombre>Comercial</nombre>
+        <sueldo>1800€</sueldo>
+    </categoria>
+    <categoria tipo="D">
+        <nombre>Obrero</nombre>
+        <sueldo>1500€</sueldo>
+    </categoria>
+</categorias>
+</empresa>

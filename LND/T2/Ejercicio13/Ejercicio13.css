@@ -1,0 +1,116 @@
+body { background: scroll no-repeat ; color: black; font-size: large; font-family: Arial, Helvetica, sans-serif;  }
+
+    
+    .contenedor{
+        position: relative;
+        width: 100%;
+        height: 1000px;
+        background-color: white;
+        border: 4px black;
+        background-size: 100px;    
+        }
+
+.capa1{
+    position: relative;
+    top: 0px;
+    width: 25%;
+    height: 250px;
+    background-color:  yellow; 
+    border: 2px solid black;  
+    flex-direction: row;
+    box-sizing: content-box;
+}
+
+.capa2{
+    position: relative;
+    bottom: 254px;
+    width: 75%;
+    height: 250px;
+    background-color:  pink; 
+    border: 2px solid black;  
+    flex-direction: row;
+    box-sizing: content-box;
+    left: 372px;
+}
+
+.capa3{
+    position: relative;
+    bottom: 255px;
+    width: 50%;
+    height: 500px;
+    background-color:  blue; 
+    border: 2px solid black;  
+    flex-direction: row;
+    box-sizing: content-box;
+}
+
+.capa4{
+    position: relative;
+    width: 25%;
+    height: 500px;
+    bottom: 759px;
+    background-color:  green; 
+    border: 2px solid black;  
+    flex-direction: row;
+    box-sizing: content-box;
+    left: 755px;
+}
+
+.capa5{
+    position: relative;
+    width: 25%;
+    height: 500px;
+    bottom: 1263px;
+    background-color:  black; 
+    border: 2px solid black;  
+    flex-direction: row;
+    box-sizing: content-box;
+    left: 1123px;
+}
+
+.capa6{
+    position: relative;
+    width: 25%;
+    height: 250px;
+    bottom: 1265px;
+    background-color:  rgb(13, 97, 74); 
+    border: 2px solid black;  
+    flex-direction: row;
+    box-sizing: content-box;
+}
+
+.capa7{
+    position: relative;
+    width: 25%;
+    height: 250px;
+    bottom: 1520px;
+    background-color:  orange; 
+    border: 2px solid black;  
+    flex-direction: row;
+    box-sizing: content-box;
+    left: 380px;
+}
+
+.capa8{
+    position: relative;
+    width: 25%;
+    height: 250px;
+    bottom: 1774px;
+    background-color:  aquamarine;
+    border: 2px solid black;  
+    flex-direction: row;
+    box-sizing: content-box;
+    left: 755px;
+}
+
+.capa9{
+    position: relative;
+    width: 25%;
+    height: 250px;
+    left:1123px;
+    bottom: 2027px;
+    background-color:  grey;
+    border: 2px solid black;  
+    flex-direction: row;
+    box-sizing: content-box;
+}

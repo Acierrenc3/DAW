@@ -1,0 +1,22 @@
+2. Se pide desarrollar un programa en Java que permita leer y escribir datos desde
+y hacia un archivo de texto. El programa debe ser capaz de almacenar una lista de
+nombres y edades de personas, y permitir agregar, eliminar y buscar personas en
+la lista. El programa debe tener las siguientes funcionalidades:
+a) Agregar una persona a la lista: se solicitará al usuario que ingrese el nombre y la
+edad de la persona, y se almacenará en el archivo de texto.
+b) Eliminar una persona de la lista: se solicitará al usuario que ingrese el nombre
+de la persona que desea eliminar, y se eliminará del archivo de texto.
+c) Buscar una persona en la lista: se solicitará al usuario que ingrese el nombre de
+la persona que desea buscar, y se mostrará su edad si se encuentra en la lista.
+d) Listar todas las personas en la lista: se mostrará en pantalla una lista de todos
+los nombres y edades almacenados en el archivo de texto.
+Además, se requiere implementar herencia y polimorfismo en la solución del
+problema, mediante la creación de una clase Persona que tenga los atributos
+nombre y edad, y las clases Hombre y Mujer que hereden de la clase Persona y
+tengan un atributo adicional género. En lugar de almacenar objetos de la clase
+Persona en la lista, se almacenarán objetos de las clases Hombre y Mujer,
+permitiendo así el uso del polimorfismo.
+Se valorará el uso adecuado de la manipulación de archivos en Java, la
+implementación correcta de las funcionalidades solicitadas, el uso adecuado de
+herencia y polimorfismo, y la usabilidad del programa en cuanto a la interacción
+con el usuario.

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ikea_Tenerife xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ikea.xsd">
+    <!--PROVEEDORES-->
+    <proveedores>
+        <nro_pro>078</nro_pro>
+        <nom_p>Maderas John</nom_p>
+        <categoria>Materias Primas</categoria>
+        <ciudad_p>California, EEUU</ciudad_p>
+    </proveedores>
+    <proveedores>
+        <nro_pro>027</nro_pro>
+        <nom_p>Metales Tom</nom_p>
+        <categoria>Materias Primas</categoria>
+        <ciudad_p>Alaska, EEUU</ciudad_p>
+    </proveedores>
+    <!--ITEMS-->
+    <items>
+        <nro_i>775</nro_i>
+        <descripcion_i>Madera de Abeto</descripcion_i>
+        <ciudad_i>California, EEUU</ciudad_i>
+    </items>
+    <items>
+        <nro_i>78</nro_i>
+        <descripcion_i>Tornillos 38mm</descripcion_i>
+        <ciudad_i>Alaska, EEUU</ciudad_i>
+    </items>
+    <!--PEDIDOS-->
+    <pedidos>
+        <nro_pe>12748</nro_pe>
+        <nro_c>4567</nro_c>
+        <nro_i>775</nro_i>
+        <nro_pro>078</nro_pro>
+        <cantidad>100</cantidad>
+        <precio>10000</precio>
+    </pedidos>
+    <pedidos>
+        <nro_pe>12749</nro_pe>
+        <nro_c>127</nro_c>
+        <nro_i>78</nro_i>
+        <nro_pro>027</nro_pro>
+        <cantidad>1500</cantidad>
+        <precio>500</precio>
+    </pedidos>
+    <!--CLIENTES-->
+    <clientes>
+        <nro_c>4567</nro_c>
+        <nom_c>Marcelo Bielsa</nom_c>
+        <ciudad_c>California, EEUU</ciudad_c>
+    </clientes>
+    <clientes>
+        <nro_c>127</nro_c>
+        <nom_c>Francesco Totti</nom_c>
+        <ciudad_c>Alaska, EEUU</ciudad_c>
+    </clientes>
+</Ikea_Tenerife>

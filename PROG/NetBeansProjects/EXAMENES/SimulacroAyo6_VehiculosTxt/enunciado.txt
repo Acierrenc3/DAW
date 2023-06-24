@@ -1,0 +1,15 @@
+Se requiere desarrollar un programa en Java que permita llevar el control de los vehículos de una empresa de transporte. El programa debe ser capaz de almacenar una lista de vehículos, y permitir agregar, eliminar y buscar vehículos en la lista. Cada vehículo tiene un número de identificación, una marca, un modelo y un año de fabricación.
+
+El programa debe tener las siguientes funcionalidades:
+
+a) Agregar un vehículo a la lista: se solicitará al usuario que ingrese el número de identificación, la marca, el modelo y el año de fabricación del vehículo, y se almacenará en el archivo de texto.
+
+b) Eliminar un vehículo de la lista: se solicitará al usuario que ingrese el número de identificación del vehículo que desea eliminar, y se eliminará del archivo de texto.
+
+c) Buscar un vehículo en la lista: se solicitará al usuario que ingrese el número de identificación del vehículo que desea buscar, y se mostrará su marca, modelo y año de fabricación si se encuentra en la lista.
+
+d) Listar todos los vehículos en la lista: se mostrará en pantalla una lista de todos los vehículos almacenados en el archivo de texto, incluyendo su número de identificación, marca, modelo y año de fabricación.
+
+Además, se requiere implementar herencia y polimorfismo en la solución del problema, mediante la creación de una clase Vehiculo que tenga los atributos número de identificación, marca, modelo y año de fabricación, y las clases Automovil y Camion que hereden de la clase Vehiculo y tengan un atributo adicional capacidad de carga (para los camiones). En lugar de almacenar objetos de la clase Vehiculo en la lista, se almacenarán objetos de las clases Automovil y Camion, permitiendo así el uso del polimorfismo.
+
+Se valorará el uso adecuado de la manipulación de archivos en Java, la implementación correcta de las funcionalidades solicitadas, el uso adecuado de herencia y polimorfismo, y la usabilidad del programa en cuanto a la interacción con el usuario.

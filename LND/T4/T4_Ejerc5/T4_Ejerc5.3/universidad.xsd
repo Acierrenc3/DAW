@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1" xml:lang="es">
+    <xs:element name="Universidad">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="facultades" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="codigo" type="xs:positiveInteger"></xs:element>
+                            <xs:element name="nombre" type="xs:string"></xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="investigadores" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="DNI" type="xs:string"></xs:element>
+                            <xs:element name="NomApell" type="xs:string"></xs:element>
+                            <xs:element name="facultad" type="xs:string"></xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="equipos" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="NumSerie" type="xs:string"></xs:element>
+                            <xs:element name="nombre" type="xs:string"></xs:element>
+                            <xs:element name="facultad" type="xs:string"></xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="reservas" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="DNI" type="xs:string"></xs:element>
+                            <xs:element name="NumSerie" type="xs:string"></xs:element>
+                            <xs:element name="comienzo" type="xs:date"></xs:element>
+                            <xs:element name="fin" type="xs:date"></xs:element>  
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

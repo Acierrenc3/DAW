@@ -1,0 +1,21 @@
+<!ELEMENT Ikea_Tenerife (proveedores*, items*, pedidos*, clientes*) >
+<!ELEMENT proveedores (nro_pro+, nom_p+, categoria*, ciudad_p*)>
+<!ELEMENT items (nro_i+, descripcion_i+, ciudad_i*)>
+<!ELEMENT pedidos (nro_pe, nro_c*, nro_i+, nro_pro, cantidad+, precio)>
+<!ELEMENT clientes (nro_c*, nom_c, ciudad_c)>
+
+<!ELEMENT nro_pro (#PCDATA)>
+<!ELEMENT nom_p (#PCDATA)>
+<!ELEMENT categoria (#PCDATA)>
+<!ELEMENT ciudad_p (#PCDATA)>
+<!ELEMENT nro_i (#PCDATA)>
+<!ELEMENT descripcion_i (#PCDATA)>
+<!ELEMENT ciudad_i (#PCDATA)>
+<!ELEMENT nro_pe (#PCDATA)>
+<!ELEMENT nro_c (#PCDATA)>
+<!ELEMENT cantidad (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT nom_c (#PCDATA)>
+<!ELEMENT ciudad_c (#PCDATA)>
+
+<!ATTLIST precio moneda CDATA #REQUIRED >

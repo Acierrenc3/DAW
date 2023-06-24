@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<equipos>
+    <equipo>
+        <nombre>Barcelona</nombre>
+        <ciudad>Barcelona</ciudad>
+        <entrenador/>
+        <jugadores>
+            <jugador posicion="Centro">
+                <nombre>Pedri</nombre>
+                <nacionalidad>Español</nacionalidad>
+            </jugador>
+
+            <jugador posicion="Portero">
+                <nombre>Marc-André ter Stegen</nombre>
+                <nacionalidad>Aleman</nacionalidad>
+            </jugador>
+        </jugadores>
+    </equipo>
+
+    <equipo>
+        <nombre>Madrid</nombre>
+        <ciudad>Madrid</ciudad>
+        <entrenador/>
+        <jugadores>
+            <jugador posicion="Delantero">
+                <nombre>Karim Benzema</nombre>
+                <nacionalidad>Frances</nacionalidad>
+            </jugador>
+
+            <jugador posicion="Centro">
+                <nombre>Dani Ceballos</nombre>
+                <nacionalidad>Español</nacionalidad>
+            </jugador>
+        </jugadores>
+    </equipo>
+    
+</equipos>

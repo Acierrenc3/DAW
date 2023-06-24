@@ -1,0 +1,24 @@
+1. Supongamos que se quiere implementar un sistema de gestión de productos en
+una tienda en línea. Cada producto tiene un nombre, una descripción, un precio y
+una categoría a la que pertenece. Además, se quiere que el sistema permita
+agregar, eliminar y listar los productos disponibles. Se pide desarrollar un
+programa en Java que contenga las siguientes clases:
+a) La clase Producto, con los atributos mencionados anteriormente, un constructor
+que acepte los valores de todos los atributos y los métodos get y set necesarios.
+b) La clase Tienda, que tendrá una lista de productos y los métodos
+agregarProducto, eliminarProducto y listarProductos, que permitirán agregar,
+eliminar y listar los productos disponibles.
+c) La clase Principal, que tendrá un método main que creará una instancia de la
+clase Tienda, agregará varios productos, eliminará algunos y finalmente listará los
+productos disponibles.
+Además, se requiere implementar validaciones en el ingreso de datos al sistema,
+de modo que se controle que el precio del producto sea mayor que cero, y que se
+solicite al usuario que ingrese nuevamente los datos si alguno de los valores
+ingresados es incorrecto.
+También se requiere la creación de un menú por consola que permita al usuario
+agregar, eliminar o listar los productos disponibles en la tienda, y que se repita
+hasta que el usuario decida salir del programa.
+Se valorará el uso adecuado de la programación orientada a objetos, el uso de los
+constructores y métodos get/set, la implementación correcta de la lógica de la
+tienda en el método main de la clase Principal, y la implementación correcta de la
+validación y del menú por consola.

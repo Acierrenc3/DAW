@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1" xml:lang="es">
+    <xs:element name="carta">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="prod" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string"></xs:element>
+                            <xs:element name="descripcion" type="xs:string"></xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="precio" type="xs:decimal"></xs:attribute>
+                        <xs:attribute name="cal" type="xs:decimal"></xs:attribute>
+                    </xs:complexType> <!--los Atributos van fuera del sequence pero dentro del Complex-->
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

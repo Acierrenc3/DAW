@@ -1,0 +1,12 @@
+<!ELEMENT plantas (planta*)>
+<!ELEMENT planta (nombre*, vegetacion*, altura*, forma*, colorp*, coloro*, resistencia*)>
+
+<!--Titulos-->
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT vegetacion (#PCDATA)>
+<!ELEMENT altura (#PCDATA)>
+<!ELEMENT forma (#PCDATA)>
+<!ELEMENT colorp (#PCDATA)>
+<!ELEMENT coloro (#PCDATA)>
+<!ELEMENT resistencia (#PCDATA)>

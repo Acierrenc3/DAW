@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/LenguajedeMarcas/UDEMY/Plantilla_Web/css/estiloscontacto.css">
+    <title>Formulario de contacto - Orientafemete</title>
+</head>
+<body>
+    <div class="formulario-container">
+        <h1>Formulario de contacto</h1>
+        <form action="" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="asunto">Asunto:</label>
+            <input type="text" id="asunto" name="asunto" required>
+
+            <!-- Casilla de texto adicional -->
+            <label for="texto-adicional">Escribe aqui:</label>
+            <input type="text" id="texto-adicional" name="texto-adicional">
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+
+            <input type="submit" value="Enviar">
+            <a href="/Plantilla_Web/html/index.html" class="back-to-home">Volver al inicio</a>
+            <button id="theme-toggle">Cambiar tema</button>
+        </form>
+    </div>
+    <script>
+        const themeToggle = document.getElementById("theme-toggle");
+        const body = document.body;
+    
+        themeToggle.addEventListener("click", () => {
+            body.classList.toggle("dark-theme");
+        });
+    </script>
+</body>
+</html>

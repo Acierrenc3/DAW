@@ -1,0 +1,17 @@
+Con la solapa Rendimiento, del administrador de tareas, responder:
+
+1.¿Cuánta memoria RAM tiene el equipo? ¿Cuánta memoria RAM se está consumiendo?
+
+Tiene 2.02gb de RAM y está consumiendo entre el 60 y el 72%
+
+2.Desde la misma solapa Rendimiento, abrir “monitor de recursos” y comentar que ves en ella relacionado con los contenidos de la unidad de trabajo.
+
+Se ve el Uso de CPU, Disco, Red y Memoria, con diferentes graficos.
+
+3.Realiza este punto y el siguiente con la ayuda de Internet. Buscar cuánta memoria virtual tiene configurada Windows en este momento.
+
+Tiene 2GB configurados actualmente.
+
+4.Busca el archivo pagefile.sys en la partición C. Este archivo está oculto y es archivo de sistema, por lo que hay que cambiar la configuración para que se vea. ¿Cuál es su tamaño?
+
+Actualmente pesa unos 4GB.

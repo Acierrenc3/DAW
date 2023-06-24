@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Hospitales SYSTEM "ejerc4.dtd">
+<Hospitales>
+    <!--HOSPITALES-->
+    <Hospital>
+        <nombre>La Candelaria</nombre>
+        <direccion>Calle Candelaria, 37 , Santa Cruz de Tenerife</direccion>
+        <telefono>922354578</telefono>
+        <num_camas>30000</num_camas>
+    </Hospital>
+    <Hospital>
+        <nombre>San Diego</nombre>
+        <direccion>Calle Buenaventura, Las Palmas de Gran Canaria</direccion>
+        <telefono>928456789</telefono>
+        <num_camas>25000</num_camas>
+    </Hospital>
+    <!--SALAS-->
+    <Sala>
+        <hospital_cod>38S</hospital_cod>
+        <sala_cod>15A</sala_cod>
+    </Sala>
+    <Sala>
+        <hospital_cod>15S</hospital_cod>
+        <sala_cod>38A</sala_cod>
+    </Sala>
+    <!--PLANTILLAS-->
+    <Plantilla>
+        <hospital_cod>38S</hospital_cod>
+        <sala_cod>15A</sala_cod>
+        <empleado_num>247</empleado_num>
+    </Plantilla>
+    <Plantilla>
+        <hospital_cod>15A</hospital_cod>
+        <sala_cod>38S</sala_cod>
+        <empleado_num>127</empleado_num>
+    </Plantilla>
+    <!--OCUPACIONES-->
+    <Ocupacion>
+        <inscripcion>Si</inscripcion>
+        <hospital_cod>38S</hospital_cod>
+        <sala_cod>15A</sala_cod>
+        <cama>27</cama>
+    </Ocupacion>
+    <Ocupacion>
+        <inscripcion>Si</inscripcion>
+        <hospital_cod>15S</hospital_cod>
+        <sala_cod>38A</sala_cod>
+        <cama>144</cama>
+    </Ocupacion>
+    <!--DOCTORES-->
+    <Doctor>
+        <hospital_cod>38S</hospital_cod>
+        <doctor_num>247</doctor_num>
+        <apellido>Esteban Perez</apellido>
+        <especialidad>Paliativos</especialidad>
+    </Doctor>
+    <Doctor>
+        <hospital_cod>15A</hospital_cod>
+        <doctor_num>127</doctor_num>
+        <apellido>Gomez Ventura</apellido>
+        <especialidad>Medico Familia</especialidad>
+    </Doctor>
+    <!--ENFERMOS-->
+    <Enfermo>
+        <inscripcion>06/06/2022</inscripcion>
+        <apellido>Perez</apellido>
+        <direccion>Avenida La Salle, 12</direccion>
+        <s></s>
+        <nss>3845674AFS</nss>
+    </Enfermo>
+    <Enfermo>
+        <inscripcion>04/05/2019</inscripcion>
+        <apellido>Rodriguez Lopez</apellido>
+        <direccion>Calle Triana, 38</direccion>
+        <s></s>
+        <nss>48785682AFS</nss>
+    </Enfermo>
+</Hospitales>

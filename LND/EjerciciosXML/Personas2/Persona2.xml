@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Persona2.xsl"?>
+<fichas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="Persona2.xsd">
+    <ficha numero="1">
+        <nombre>Ana Sanz Tin</nombre>
+        <edad>22</edad>
+        <sueldo>1900</sueldo>
+        <rango>B</rango>
+    </ficha>
+    <ficha numero="2">
+        <nombre>Iker Rubio Mol</nombre>
+        <edad>23</edad>
+        <sueldo>1500</sueldo>
+        <rango>C</rango>
+    </ficha>
+    <ficha numero="3">
+        <nombre>Calico Electronico</nombre>
+        <edad>43</edad>
+        <sueldo>900</sueldo>
+        <rango>D</rango>
+    </ficha>
+    <ficha numero="4">
+        <nombre>Vieja del Visillo</nombre>
+        <edad>78</edad>
+        <sueldo>2000</sueldo>
+        <rango>A</rango>
+    </ficha>
+    <ficha numero="5">
+        <nombre>Guanapito Di Souza</nombre>
+        <edad>32</edad>
+        <sueldo>900</sueldo>
+        <rango>D</rango>
+    </ficha>
+    <ficha numero="6">
+        <nombre>Guanapito Di Souza</nombre>
+        <edad>32</edad>
+        <sueldo>1300</sueldo>
+        <rango>C</rango>
+    </ficha>
+</fichas>

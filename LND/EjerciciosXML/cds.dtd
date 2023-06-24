@@ -1,0 +1,10 @@
+<!ELEMENT cds (cd*)>
+<!ELEMENT cd (titulo*,artista*,pais*,discografica*,precio*,anio*)>
+
+<!-- TITULOS -->
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT artista (#PCDATA)>
+<!ELEMENT pais (#PCDATA)>
+<!ELEMENT discografica (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT anio (#PCDATA)>

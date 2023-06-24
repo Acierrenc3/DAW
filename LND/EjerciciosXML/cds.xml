@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cds SYSTEM "cds.dtd">
+<cds>
+    <cd>
+        <titulo></titulo>
+        <artista></artista>
+        <pais></pais>
+        <discografica></discografica>
+        <precio></precio>
+        <anio></anio>
+    </cd>
+    <cd>
+        <titulo></titulo>
+        <artista></artista>
+        <pais></pais>
+        <discografica></discografica>
+        <precio></precio>
+        <anio></anio>
+    </cd>
+    <cd>
+        <titulo></titulo>
+        <artista></artista>
+        <pais></pais>
+        <discografica></discografica>
+        <precio></precio>
+        <anio></anio>
+    </cd>
+</cds>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="cdsToXml.xsl"?>
+<cds>
+	<!-- CD1 -->
+	<cd titulo_album="Nevermind" año_publicacion="1991">
+		<artista>Nirvana</artista>
+		<cancion duracion="00:05:01">Smells Like Teen Spirit</cancion>
+		<cancion duracion="00:04:14">In Bloom</cancion>
+		<cancion duracion="00:03:39">Come As You Are</cancion>
+		<cancion duracion="00:03:03">Breed</cancion>
+		<cancion duracion="00:04:17">Lithium</cancion>
+		<sello_discografico>DGC Records</sello_discografico>
+		<sello_discografico>Virgin Records</sello_discografico>
+    </cd> 
+	<!-- CD2 -->
+	<cd titulo_album="Demon Days" año_publicacion="2005">
+		<artista>Nirvana</artista>
+        <cancion duracion="00:01:03">Intro</cancion>
+        <cancion duracion="00:03:10">Last Living Souls</cancion>
+        <cancion duracion="00:04:31">Kids With Guns</cancion>
+        <cancion duracion="00:03:43">O Green World</cancion>
+        <cancion duracion="00:04:53">Dirty Harry</cancion>
+		<sello_discografico>Parlophone</sello_discografico>
+		<sello_discografico>Virgin Records</sello_discografico>
+	</cd>
+	<!-- CD3 -->
+	<cd titulo_album="Goblin" año_publicacion="2011">
+		<artista>Tyler, The Creator</artista>
+		<cancion duracion="00:04:11">Goblin</cancion>
+		<cancion duracion="00:07:18">Yonkers</cancion>
+		<cancion duracion="00:04:13">Radicals</cancion>
+		<cancion duracion="00:03:12">She</cancion>
+		<cancion duracion="00:05:22">Transylvania</cancion>
+		<sello_discografico>XL Recordings</sello_discografico>
+	</cd>
+	<!-- CD4 -->
+	<cd titulo_album="Madvillainy" año_publicacion="2004">
+		<artista>MF Doom</artista>
+		<artista>Madlib</artista>
+		<cancion duracion="00:01:55">The Illest Villains</cancion>
+		<cancion duracion="00:01:58">Accordion</cancion>
+		<cancion duracion="00:02:11">Meat Grinder</cancion>
+		<cancion duracion="00:02:35">Bistro</cancion>
+		<cancion duracion="00:03:54">Raid</cancion>
+		<sello_discografico>Stones Throw Records</sello_discografico>
+	</cd>
+	<!-- CD5 -->
+	<cd titulo_album="My Beautiful Dark Twisted Fantasy" año_publicacion="2010">
+		<artista>Kanye West</artista>
+		<cancion duracion="00:04:40">Dark Fantasy</cancion>
+		<cancion duracion="00:05:57">Gorgeous</cancion>
+		<cancion duracion="00:04:52">Power</cancion>
+		<cancion duracion="00:01:02">All Of The Lights (Interlude)</cancion>
+		<cancion duracion="00:04:59">All Of The Lights</cancion>
+		<sello_discografico>Roc-A-Fella Records</sello_discografico>
+	</cd>
+	<!-- CD6 -->
+	<cd titulo_album="Random Access Memories" año_publicacion="2013">
+		<artista>Daft Punk</artista>
+		<cancion duracion="00:04:35">Give Life Back To Music</cancion>
+		<cancion duracion="00:05:22">The Game Of Love</cancion>
+		<cancion duracion="00:09:04">Giorgio By Moroder</cancion>
+		<cancion duracion="00:03:48">Within</cancion>
+		<cancion duracion="00:05:37">Instant Crush</cancion>
+		<sello_discografico>Columbia</sello_discografico>
+		<sello_discografico>Sony Music</sello_discografico>
+	</cd>
+	<!-- CD7 -->
+	<cd titulo_album="Good Kid, M.A.A.d City" año_publicacion="2012">
+		<artista>Kendrick Lamar</artista>
+		<cancion duracion="00:03:48">Sherane a.k.a Master Splinter’s Daughter</cancion>
+		<cancion duracion="00:05:37">Bitch, Don’t Kill My Vibe</cancion>
+		<cancion duracion="00:05:53">Backseat Freestyle</cancion>
+		<cancion duracion="00:08:18">The Art Of Peer Pressure</cancion>
+		<cancion duracion="00:06:09">Money Trees</cancion>
+		<sello_discografico>Top Dawg Entertainment</sello_discografico>
+	</cd>
+	<!-- CD8 -->
+	<cd titulo_album="XX" año_publicacion="2009">
+		<artista>The XX</artista>
+		<cancion duracion="00:02:08">Intro</cancion>
+		<cancion duracion="00:02:57">VCR</cancion>
+		<cancion duracion="00:02:41">Crystalised</cancion>
+		<cancion duracion="00:04:02">Islands</cancion>
+		<cancion duracion="00:03:34">Heart Skipped A Beat</cancion>
+		<sello_discografico>XL Recordings</sello_discografico>
+		<sello_discografico>Young Turks</sello_discografico>
+	</cd>
+	<!-- CD9 -->
+	<cd titulo_album="The Suburbs" año_publicacion="2010">
+		<artista>Arcade Fire</artista>
+		<cancion duracion="00:05:15">The Suburbs</cancion>
+		<cancion duracion="00:04:16">Ready To Start</cancion>
+		<cancion duracion="00:04:40">Modern Man</cancion>
+		<cancion duracion="00:03:57">Rococo</cancion>
+		<cancion duracion="00:02:52">Empty Room</cancion>
+		<sello_discografico>Merge Records</sello_discografico>
+		<sello_discografico>Sonovox Records</sello_discografico>
+	</cd>
+	<!-- CD10 -->
+	<cd titulo_album="In Rainbows" año_publicacion="2008">
+		<artista>Radiohead</artista>
+		<cancion duracion="00:03:57">15 Step</cancion>
+		<cancion duracion="00:04:02">Bodysnatchers</cancion>
+		<cancion duracion="00:04:15">Nude</cancion>
+		<cancion duracion="00:05:18">Weird Fishes/Arpeggi</cancion>
+		<cancion duracion="00:03:49">All I Need</cancion>
+		<sello_discografico>TBD Records</sello_discografico>
+		<sello_discografico>RED Distribution</sello_discografico>
+		<sello_discografico>Virgin Records</sello_discografico>
+	</cd>
+</cds>

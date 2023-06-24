@@ -1,0 +1,16 @@
+@charset "UTF-8";
+* {margin:0;padding:0;border:0; box-sizing: border-box; overflow: hidden;}
+body {
+ background-image: url("imagenes/fondoEstrellas.jpg");
+ text-align: justify;
+ font-family: arial, verdana, tahoma;
+ font-size: 18pt; color:white; overflow: hidden;
+ color: black;
+}
+iframe { width: 100%; height: 100%;}
+header { height: 10vh; }
+nav, main { float: left; height: 85vh;}
+nav { width: 15%; }
+nav a { display:block; text-decoration: none; text-align:center; padding: 5px; color: white; }
+main {width: 85%; }
+footer { clear: both; height: 5vh; color: yellow;}

@@ -1,0 +1,19 @@
+1. ¿Cuánta memoria RAM tiene el equipo?
+
+2.02Gb
+
+2. ¿Cuánta memoria RAM se está consumiendo?
+
+0.64Gb
+
+3. ¿Cuánta memoria swap tiene el equipo?
+
+2.74Gb
+
+4. ¿Cuánta se está consumiendo?
+
+0.18Gb
+
+5. ¿Te parece bien configurada la swap? ¿Cuál debe ser el límite mínimo y máximo?
+
+No. El tamaño de la SWAP debería de ser la mitad de la RAM como mínimo.

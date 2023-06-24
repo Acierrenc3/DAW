@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version="0.1" xml:lang="es">
+    <xs:element name="hechos_historicos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="hecho" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="fecha" minOccurs="1" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="dia" minOccurs="1" maxOccurs="unbounded" type="xs:integer"/>
+                                        <xs:element name="mes" minOccurs="1" maxOccurs="unbounded" type="xs:integer"/>
+                                        <xs:element name="anio" minOccurs="1" maxOccurs="unbounded" type="xs:integer"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="descripcion"></xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

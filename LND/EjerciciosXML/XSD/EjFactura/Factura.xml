@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Factura.xsl"?>
+<facturas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Factura.xsd">    
+    <factura>
+        <empresa>Equipos Digitales S.L.</empresa>
+        <direccion>Av. Valladolid madrid 28015</direccion>
+        <cif>q-9876543</cif>
+        <telefono>917776688</telefono>
+        <fax>917776699</fax>
+    </factura>
+    <clientes>
+        <ncliente>879</ncliente>
+        <nombre>Dario Bueno Gutierrez</nombre>
+        <direccionenvio>Av.Oporto nº7 4d</direccionenvio>
+        <poblacion>Madrid</poblacion>
+        <cod.postal>28043</cod.postal>
+        <provincia>Madrid</provincia>
+    </clientes>
+    <pedido>
+        <fecha>2022-09-24</fecha>
+        <npedido>731</npedido>
+        <formaDePago>TARJETA</formaDePago>
+        <productos>
+            <producto>
+                <referencia>M!!</referencia>
+                <descripcion>Micro prentium 2</descripcion>
+                <cantidad>1</cantidad>
+                <precio>230</precio>
+                <iva>16</iva>
+                <importe>260.80</importe>
+            </producto>
+        <totalfactura>266.80</totalfactura>  
+        </productos>
+    </pedido>
+</facturas>

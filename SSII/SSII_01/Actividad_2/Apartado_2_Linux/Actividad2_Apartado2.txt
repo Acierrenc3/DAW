@@ -1,0 +1,19 @@
+1. ¿Cuántos procesos se han ejecutado desde que se ha encendido el ordenador?
+
+*Se han ejecutado 2462 procesos.
+
+2. ¿Cuál es el PID y el nombre del proceso con menor prioridad?
+
+*El PID es 2461 y el Nombre del proceso es: usr/bin/python3 /usr/bin/unattended-upgrade
+
+3. ¿Cuál es el PID y el nombre del proceso con mayor prioridad?
+
+*Hay varios, pero son la mayoria de Procesos que ejecuta el root.
+
+4. Comenzando por el proceso final, especificar su proceso padre, su abuelo, bisabuelo y así hasta llegar al proceso inicial.
+
+*
+
+5. ¿Qué identificador de proceso (PID) tiene el proceso padre de todos los procesos? ¿Cómo se llama?
+
+*PID: 1 - Se llama /sbin/init splash

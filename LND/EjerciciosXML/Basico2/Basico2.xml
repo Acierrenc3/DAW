@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mensaje xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="Basico2.xsd">
+    <remitente nombre="alfredo reino" email="alf@ibium.com"/>
+    <destinatario nombre="Bill clinton" email="presidente@gmasil.com"/>
+    <asunto>Hola Bill</asunto>
+    <texto>
+        <parrafo>Hola que tal</parrafo>
+    </texto>
+</mensaje>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<!DOCTYPE plantas SYSTEM "plantas.dtd">-->
+<plantas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="plantas.xsd">
+    <planta>
+        <nombre>Arce de Montpellier</nombre>
+        <vegetacion>Caducifolio</vegetacion>
+        <altura>10</altura>
+        <forma>Copa esférica. Tronco principal recto con bifurcaciones. Ramaje colgate</forma>
+        <colorp>Haz de verde brillante, envés verde blanquecino</colorp>
+        <resistencia>Heladas fuertes (hasta -15ºC)</resistencia>
+    </planta>
+    <planta>
+        <nombre></nombre>
+        <vegetacion></vegetacion>
+        <altura>10</altura>
+        <forma></forma>
+        <colorp></colorp>
+        <resistencia></resistencia>
+    </planta>
+    <planta>
+        <nombre></nombre>
+        <vegetacion></vegetacion>
+        <altura>10</altura>
+        <forma></forma>
+        <colorp></colorp>
+        <resistencia></resistencia>
+    </planta>
+    <planta>
+        <nombre></nombre>
+        <vegetacion></vegetacion>
+        <altura>10</altura>
+        <forma></forma>
+        <colorp></colorp>
+        <coloro>Ocre</coloro>
+        <resistencia></resistencia>
+    </planta>
+    <planta>
+        <nombre></nombre>
+        <vegetacion></vegetacion>
+        <altura>10</altura>
+        <forma></forma>
+        <colorp></colorp>
+        <resistencia></resistencia>
+    </planta>
+</plantas>

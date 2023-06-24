@@ -1,0 +1,29 @@
+body { background: scroll no-repeat ; color: black; font-size: 50px; font-family: Arial; background-image:url(fondo.png); 
+background-size: 1000px ;}
+
+
+
+.contenedor{ 
+        position: relative;
+        width: 100%;
+        height: auto;
+        background-color: blue;
+        background-size: 1500px;
+        border: 4px black;              
+}
+
+.uno {
+    background-color: aqua;
+}
+
+.dos {
+    background-color: blanchedalmond;
+}
+
+table th {
+    text-align: center;
+}
+
+table tr {
+    text-align: center;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Formulario Registro Videoclub</title>
+    <legend>Formulario Registro Videoclub</legend>
+    
+        <meta charset="utf-8"/>
+<link href="fondo.css" rel="stylesheet" type="text/css" />
+<form action="http://infociclos.rf.gd/PHP/datos.php" method=”post” enctype=”multipart/form-data”>
+</head>
+    <fieldset>
+    <table>
+<tr>
+    <td><label for="dni">D.N.I.:</label></td>
+    <td>
+    <input type="number" name="dni" id="dni" size=”9” maxlength=”9” />
+    <select name="letra" id="letra">
+        <option>T</option>
+        <option>R</option>
+        <option>W</option>
+        <option>A</option>
+        <option>G</option>
+        <option>M</option>
+        <option>Y</option>
+        <option>F</option>
+        <option>P</option>
+        <option>D</option>
+        <option>X</option>
+        <option>B</option>
+        <option>N</option>
+        <option>J</option>
+        <option>Z</option>
+        <option>S</option>
+        <option>Q</option>
+        <option>V</option>
+        <option>H</option>
+        <option>L</option>
+        <option>C</option>
+        <option>K</option>
+        <option>E</option>
+    </select> <br><br>
+    </td>
+</tr>
+<tr>
+    <td><label for="nombre">Nombre:</label></td>
+    <td><input type=”text” id=”nombre” name=”nombre” size=”20” maxlength=”40” value=”juan” /></td>
+</tr>
+    <td><label for="apellidos">Apellidos:</label></td>
+    <td><input type=”text” id=”apellidos” name=”Apellidos” size=”30” maxlength=”50” value=”Rodriguez” /></td>
+<tr>
+    <td><label for="fecha nacimiento">Fecha Nacimiento:</label></td>
+    <td>
+    <select name="mesNac"  id="mesNac" size="1">
+        <option value="1">Enero</option>
+        <option value='2'>Febrero</option>
+        <option value='3'>Marzo</option>
+        <option value='4'>Abril</option>
+        <option value='5'>Mayo</option>
+        <option value='6'>Junio</option>
+        <option value='7'>Julio</option>
+        <option value='8'>Agosto</option>
+        <option value='9'>Septiembre</option>
+        <option value='10'>Octubre</option>
+        <option value='11'>Noviembre</option>
+        <option value='12'>Diciembre</option>
+    </select>
+    </td>
+</tr>
+<tr>
+    <td><label for="contrasenia">Contraseña:</label></td>
+    <td><input id=”contrasenia” type="password" name=”contrasenia” size=”10” maxlength=”10” /></td>
+</tr>
+    <td><label for="contrasenia2">Repite Contraseña:</label></td>
+    <td><input id="contrasenia2" type="password"  name="contrasenia2" size=”10” maxlength=”10” /></td>
+<tr>
+    <td><label for="direccion">Dirección:</label></td>
+    <td><input type="direccion" id=”direccion” name=”direccion” size=”30” maxlength=”30” /></td>
+</tr>
+    <td><label for="telefono">Teléfono:</label></td> 
+    <td><input type="telefono" name="telefono" id="telefono" size=”9” maxlength=”9” /></td>
+<tr>
+    <td><label for="checkbox">Generos Favoritos:</label></td> 
+    <td>   
+    <select name="GenFavs" id="GenFavs" size="1" >
+        <option value="1">Dramático</option>
+        <option value='2'>Humor</option>
+        <option value='3'>Terror</option>
+        <option value='4'>Musical</option>
+    </select>
+    </td>
+</tr>
+<tr>
+    <td><label for="checkbox2">Método de Pago:</label></td>    
+    <td>
+        <select name="pago" id="pago" size="1">
+        <option value="1">Metálico</option>
+        <option value='2'>Transferencia</option>
+        <option value='3'>Tercero</option>
+    </select><br><br>
+    </td>
+</tr>
+<tr>
+    <td><label for="observaciones">Obervaciones:</label></td>
+    <td><textarea id=”observaciones” name=”observaciones” cols=”30” rows=”10” placeholder=”Observaciones”></textarea></td>
+</tr>
+<td> <input type="submit" value="Enviar" > </td>
+<td><button><input type=”reset” value="Borrar"></button></td>
+</fieldset>
+</table>
+</form>

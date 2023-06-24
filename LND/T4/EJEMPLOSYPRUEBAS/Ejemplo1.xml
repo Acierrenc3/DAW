@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE ikea>
+<ikea>
+    <establecimiento>Ikea Tenerife</establecimiento>
+    <pedidos>
+        <pedido id="1">
+            <contenido>
+                <item referencia="JUSK">
+                    <cantidad>2</cantidad>
+                    <precio_unidad moneda="EUR">100</precio_unidad>
+                     <descripcion>Sillon de madera</descripcion>
+                     <oferta>Sí</oferta>
+                     <color>negro</color>           
+                </item>
+                <item referencia="FACK">
+                    <cantidad>3</cantidad>
+                    <precio_unidad moneda="EUR">10</precio_unidad>
+                    <descripcion>Mesa de Noche</descripcion>
+                    <oferta>No</oferta>
+                    <color>Blanco</color>
+                </item>
+            </contenido>
+            <envío>
+                <destinatario>Fernando López</destinatario>
+                <direccion>
+<!-- Declaramos un elemento con el atributo tipo Avenida y se le da un valor-->
+                    <nombre tipo="Avenida">Trinidad</nombre>
+                    <numero>5</numero>
+                    <CP>38135</CP>
+                    <localidad>San Cristobal de la Laguna</localidad>
+                    <provincia>Santa Cruz de Tenerife</provincia>
+                </direccion>
+                <forma_de_pago>Bizum</forma_de_pago>
+                <tipo_envio>Urgente 24h</tipo_envio>
+                <observaciones>636293568</observaciones>
+            </envío>
+            <precio>
+                <base moneda="EUR">255></base>
+                <iva tipo="6.5%">16,58</iva> <!--Declaramos tipo de IVA y le damos un valor-->
+                <envio moneda="EUR">0</envio>
+                <total moneda="EUR">271,58</total>  
+            </precio>
+        </pedido>
+        <pedido id="2">
+            <contenido>ç
+                <item referencia="MUSK">
+                    <cantidad>5 uds</cantidad>
+                    <precio_unidad moneda="EUR">875€</precio_unidad>
+                    <descripcion>Encimera</descripcion>
+                    <oferta>No</oferta>
+                    <color>Gris ceniza</color>
+                </item>
+            </contenido>
+        </pedido>
+    </pedidos>
+</ikea>

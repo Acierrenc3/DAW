@@ -1,0 +1,15 @@
+Realizar los 3 pasos siguientes (son 3 formas distintas de recuperar la máquina en un futuro)
+
+1. Buscar archivo .vdi del disco duro de la máquina instalada. ¿Cuánto ocupa actualmente?
+Crear una carpeta BibliotecaVirtual en un disco externo, o donde guardes tus copias de seguridad, y copiar este archivo .vdi. De esta forma, siempre tendrás un disco duro virtual con Windows 10 instalado.
+
+*Actualmente pesa 14GBs
+
+2. Clonar la máquina en VirtualBox. Menú contextual en VirtualBox en el nombre de la máquina. Llamar al clon “Windows10_Reserva”. De esta forma, tendrás una máquina de cero clonada para cualquier módulo o práctica posterior. Comprueba que arranca, y apágala.
+Observa que el punto 1, tiene la ventaja de guardar el disco duro, de forma independiente a si tienes instalado VirtualBox. Este punto 2, sin embargo tiene la ventaja de que ya son 2 máquinas distintas, con discos duros e identificadores de usuario distintos (UUID)
+
+*Mirar Capturas de Pantalla
+
+3. Crear una instantánea de tu máquina Windows10Sistemas y llámala “RecienInstaladoWindows10”. De esta forma, si en otra unidad de trabajo posterior, deja de funcionar esta máquina, podríamos restaurar la instantánea.
+
+*Mirar capturas de Pantalla

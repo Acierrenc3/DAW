@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="canasta3.xsl"?>
+<canasta>
+    <producto idProducto="057">
+        <nombre>Manzana</nombre>
+        <origen>Mexico</origen>
+        <cantidad>20</cantidad>
+        <coste>14.5</coste>
+    </producto>
+    <producto idProducto="230">
+        <nombre>Pera</nombre>
+        <origen>Argentina</origen>
+        <cantidad>32</cantidad>
+        <coste>12.8</coste>
+    </producto>
+    <producto idProducto="218">
+        <nombre>Mango</nombre>
+        <origen>Colombia</origen>
+        <cantidad>10</cantidad>
+        <coste>18.5</coste>
+    </producto>
+    <producto idProducto="315">
+        <nombre>Pasta</nombre>
+        <origen>Italia</origen>
+        <cantidad>23</cantidad>
+        <coste>04.57</coste>
+    </producto>
+    <producto idProducto="315">
+        <nombre>Platano</nombre>
+        <origen>Islas Canarias</origen>
+        <cantidad>67</cantidad>
+        <coste>09.11</coste>
+    </producto>
+</canasta>

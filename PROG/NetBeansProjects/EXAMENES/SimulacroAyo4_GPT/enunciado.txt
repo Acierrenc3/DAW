@@ -1,0 +1,13 @@
+Supongamos que se quiere desarrollar un sistema de gestión de empleados para una empresa. Cada empleado tiene un nombre, un apellido, un salario y un puesto en la empresa. Además, se quiere que el sistema permita agregar, eliminar y listar los empleados de la empresa. Se pide desarrollar un programa en Java que contenga las siguientes clases:
+
+a) La clase Empleado, con los atributos mencionados anteriormente, un constructor que acepte los valores de todos los atributos y los métodos get y set necesarios.
+
+b) La clase Empresa, que tendrá una lista de empleados y los métodos agregarEmpleado, eliminarEmpleado y listarEmpleados, que permitirán agregar, eliminar y listar los empleados de la empresa.
+
+c) La clase Principal, que tendrá un método main que creará una instancia de la clase Empresa, agregará varios empleados, eliminará algunos y finalmente listará los empleados de la empresa.
+
+Además, se requiere implementar validaciones en el ingreso de datos al sistema, de modo que se controle que el salario del empleado sea mayor que cero, y que se solicite al usuario que ingrese nuevamente los datos si alguno de los valores ingresados es incorrecto.
+
+También se requiere la creación de un menú por consola que permita al usuario agregar, eliminar o listar los empleados de la empresa, y que se repita hasta que el usuario decida salir del programa.
+
+Se valorará el uso adecuado de la programación orientada a objetos, el uso de los constructores y métodos get/set, la implementación correcta de la lógica de la empresa en el método main de la clase Principal, y la implementación correcta de la validación y del menú por consola.

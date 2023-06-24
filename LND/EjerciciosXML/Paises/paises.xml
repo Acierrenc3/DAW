@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="paises.xsl"?>
+<ciudades xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="paises.xsd">
+    <ciudad>
+        <nombre>Nueva Delhi</nombre>
+        <pais continente="Ásia">India</pais>
+        <poblacion>1410000</poblacion>
+    </ciudad>
+    <ciudad>
+        <nombre>Lisboa</nombre>
+        <pais continente="Europa">Portugal</pais>
+        <poblacion>504718</poblacion>
+    </ciudad>
+    <ciudad>
+        <nombre>El Cairo</nombre>
+        <pais continente="África">Egipto</pais>
+        <poblacion>9540000</poblacion>
+    </ciudad>
+</ciudades>

@@ -1,0 +1,17 @@
+<!ELEMENT basededatos (piezas*, proveedores*, suministros*) >
+<!ELEMENT piezas (pieza+, codigo+, nombre*)>
+<!ELEMENT proveedores (proveedor+, id+, nombre2*)>
+<!ELEMENT suministros (suministro, codigo_pieza+, idProveedor+, precio)>
+
+<!ELEMENT pieza (#PCDATA)>
+<!ELEMENT codigo (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT proveedor (#PCDATA)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT nombre2 (#PCDATA)>
+<!ELEMENT suministro (#PCDATA)>
+<!ELEMENT codigo_pieza (#PCDATA)>
+<!ELEMENT idProveedor (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+
+<!ATTLIST precio moneda CDATA #REQUIRED >

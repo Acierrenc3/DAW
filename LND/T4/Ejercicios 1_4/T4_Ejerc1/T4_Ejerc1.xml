@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE basededatos SYSTEM "basededatos.dtd">
+<basededatos>
+    <!--PIEZAS-->
+    <piezas>
+        <pieza>Modular</pieza>
+        <codigo>B78</codigo>
+        <nombre>Resorte Conico</nombre>
+    </piezas>
+    <piezas>
+        <pieza>Central</pieza>
+        <codigo>A03</codigo>
+        <nombre>Encendedor Motor</nombre>
+    </piezas>
+    <!--PROVEEDORES-->
+    <proveedores>
+        <proveedor>Hyundai</proveedor>
+        <id>P308</id>
+        <nombre2>Hyundai Motors</nombre2>
+    </proveedores>
+    <proveedores>
+        <proveedor>Renault</proveedor>
+        <id>P002</id>
+        <nombre2>Casa Renault</nombre2>
+    </proveedores>
+    <!--SUMINISTROS-->
+    <suministros>
+        <suministro>Si</suministro>
+        <codigo_pieza>A03</codigo_pieza>
+        <idProveedor>P308</idProveedor>
+        <precio moneda="EUR">465</precio>
+    </suministros>
+    <suministros>
+        <suministro>Si</suministro>
+        <codigo_pieza>B78</codigo_pieza>
+        <idProveedor>P002</idProveedor>
+        <precio moneda="EUR">320</precio>
+    </suministros>
+</basededatos>

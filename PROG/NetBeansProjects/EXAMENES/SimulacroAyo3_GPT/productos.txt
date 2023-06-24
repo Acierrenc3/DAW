@@ -1,0 +1,2 @@
+Manzana,4.5,Frutas y Verduras
+Atun en Lata,4.0,Laterio
