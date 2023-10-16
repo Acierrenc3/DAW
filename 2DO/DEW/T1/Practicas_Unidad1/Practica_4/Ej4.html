@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    
+
+
+    <p id="p1">Pregunta 1: ¿La Tierra es redonda?</p>
+    <button type="button" onclick="funcionAcierto('p1')">¡Verdadero!</button>
+    <button type="button" onclick="funcionError('p1')">¡Falso!</button>
+
+    <p id="p2">Pregunta 2: ¿El sol es una Estrella?</p>
+    <button type="button" onclick="funcionAcierto('p2')">¡Verdadero!</button>
+    <button type="button" onclick="funcionError('p2')">¡Falso!</button>
+
+    <p id="p3">Pregunta 3: ¿Marte es rojo?</p>
+    <button type="button" onclick="funcionAcierto('p3')">¡Verdadero!</button>
+    <button type="button" onclick="funcionError('p3')">¡Falso!</button>
+
+    
+    <script>
+
+        // FUNCIONES
+
+        function funcionError(pId) {
+            var p = document.getElementById(pId);
+            p.style.fontSize = "25px";
+            p.style.color = "red";
+        }
+
+        function funcionAcierto(pId) {
+            var p = document.getElementById(pId);
+            p.style.fontSize = "25px";
+            p.style.color = "green";
+        }
+    </script>
+</body>
+
+<!-- Elabora un cuestionario de 7 preguntas con dos botones cada una
+(verdadero/falso) de modo que el color del texto cambie a verde (acierto) o rojo (error).
+Para ello tendrás que escribir dos funciones (una para verdadero y otra para falso) y
+darle un valor de entrada function(x){“resultado”}. -->
+
+</html>

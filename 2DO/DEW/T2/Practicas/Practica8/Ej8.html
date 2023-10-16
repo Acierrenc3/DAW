@@ -1,0 +1,41 @@
+
+<!--Actividad 8. Crea una web sencilla que permita al usuario introducir un número de entrada y obtener todos los divisores del mismo. 
+    Para ello, algunas funciones a tener en cuenta además de las vistas anteriormente son:
+
+parseInt()
+%: devuelve el módulo o resto de una división.-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Divisores de un número</title>
+</head>
+<body>
+    <h2>Obtener Divisores de un Número</h2>
+    <label for="numeroInput">Introduce un número: </label>
+    <input type="number" id="numeroInput">
+    <button onclick="calcularDivisores()">Calcular Divisores</button>
+    <p>Divisores: <span id="divisores"></span></p>
+
+    <script>
+        function calcularDivisores() {
+            const numero = parseInt(document.getElementById("numeroInput").value);
+
+            if (isNaN(numero)) { //Funcion por si no introduce un dato valido
+                alert("Por favor, introduce un número válido.");
+                return;
+            }
+
+            const divisores = [];
+
+            for (let i = 1; i <= numero; i++) {
+                if (numero % i === 0) {
+                    divisores.push(i);
+                }
+            }
+
+            document.getElementById("divisores").textContent = divisores.join(', ');
+        }
+    </script>
+</body>
+</html>

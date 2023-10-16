@@ -1,0 +1,55 @@
+
+<!-- Actividad 7. Observa y analiza la función del siguiente código. 
+    A continuación modifica el código para que sea el usuario el que escoja el número de filas del rombo.
+
+
+    Se agrega un Input en el Html para que el usuario pueda agregar el numero de filas que quiera que tenga el rombo
+    y un boton que iniciará la funcion dibujerRombo()-->
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Rombo de emoticonos</title>
+    </head>
+    <body>
+    
+        <div id="rombo" style="text-align: center"></div>
+        
+        <label for="numeroFilas">Introduce el número de filas: </label>
+        <input type="number" id="numeroFilas"> <!--Input agregado-->
+        <button onclick="dibujarRombo()">Dibujar Rombo</button>
+        
+        <script>
+            function dibujarRombo() {
+                // Obtencion del numero de filas agregadas por el usuario:
+                const filas = parseInt(document.getElementById("numeroFilas").value);
+    
+                if (isNaN(filas) || filas < 1) { //Condicional por si no agrega filas
+                    alert("Por favor, introduce un número válido de filas mayor que 0.");
+                    return;
+                }
+    
+                let output = '';
+    
+                // Parte creciente del rombo:
+                for (let i = 1; i <= filas; i++) {
+                    let linea = '';
+                    for (let j = 1; j <= 2 * i - 1; j++) {
+                        linea += '*';
+                    }
+                    output += '&nbsp;'.repeat(filas - i) + linea + '<br>';
+                }
+    
+                // Parte decreciente del rombo:
+                for (let i = filas - 1; i >= 1; i--) {
+                    let linea = '';
+                    for (let j = 1; j <= 2 * i - 1; j++) {
+                        linea += '*';
+                    }
+                    output += '&nbsp;'.repeat(filas - i) + linea + '<br>';
+                }
+                document.getElementById('rombo').innerHTML = output;
+            }
+        </script>
+    </body>
+    </html>
