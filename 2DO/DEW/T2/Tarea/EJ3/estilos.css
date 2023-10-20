@@ -1,0 +1,56 @@
+h1 {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+form {
+  text-align: center;
+}
+
+#calculadora {
+  background-color: aqua;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 25px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  font-size: 16px;
+}
+
+input[type="number"] {
+  width: 100px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+button #operar {
+  background-color: chocolate;
+  color: rgb(125, 75, 206);
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+p {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+input #totales {
+  width: 100px;
+  padding: 5px;
+  text-align: center;
+}
+
+button #operar:hover {
+  background-color: violet;
+}

@@ -1,0 +1,69 @@
+<h1>Calculadora IF</h1>
+<link rel="stylesheet" href="/T2/Tarea/EJ3/estilos.css" />
+<br />
+<form>
+  <div id="calculadora">
+    <p>
+      <input type="text" style="text-align: center" id="totales" readonly />
+    </p>
+    <br />
+    <label for="numero1"
+      >Numero 1:
+      <input
+        type="number"
+        style="text-align: center"
+        id="numero1"
+        name="numero1"
+        required
+      />
+    </label>
+    <br /><br />
+    <label for="numero2"
+      >Numero 2:
+      <input
+        type="number"
+        style="text-align: center"
+        id="numero2"
+        name="numero2"
+        required
+      />
+    </label>
+    <br /><br />
+
+    <div>
+      <button id="sumar" type="button" onclick="operar('+')">+</button>
+      <button id="restar" type="button" onclick="operar('-')">-</button>
+      <button id="multiplicar" type="button" onclick="operar('*')">
+        &times;
+      </button>
+      <button id="dividir" type="button" onclick="operar('/')">/</button>
+    </div>
+  </div>
+</form>
+
+<script>
+  function operar(operacion) {
+    let numero1 = parseFloat(document.getElementById("numero1").value);
+    let numero2 = parseFloat(document.getElementById("numero2").value);
+
+    let totales;
+
+    if (operacion === "+") {
+      totales = numero1 + numero2;
+    } else if (operacion === "-") {
+      totales = numero1 - numero2;
+    } else if (operacion === "*") {
+      totales = numero1 * numero2;
+    } else if (operacion === "/") {
+      if (numero2 !== 0) {
+        totales = numero1 / numero2;
+      } else {
+        alert("No se puede dividir por 0");
+      }
+    } else {
+      alert("Operador no encontrado");
+    }
+
+    document.getElementById("totales").value = totales.toFixed(2);
+  }
+</script>
