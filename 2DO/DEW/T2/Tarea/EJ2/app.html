@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <h1>Desplazamientos de bits</h1>
+
+        <div>
+            <h2>125 / 8</h2>
+            <p>Resultado: <span id="resultado1"></span></p>
+        </div>
+
+        <div>
+            <h2>140 x 4</h2>
+            <p>Resultado: <span id="resultado2"></span></p>
+        </div>
+
+
+        <div>
+            <h2>25 / 2</h2>
+            <p>Resultado: <span id="resultado3"></span></p>
+        </div>
+
+        <div>
+            <h2>10 x 16</h2>
+            <p>Resultado: <span id="resultado4"></span></p>
+        </div>
+
+        <script>
+
+            document.getElementById('resultado1').textContent = 125 >> 3;
+            document.getElementById('resultado2').textContent = 40 << 2;
+            document.getElementById('resultado3').textContent = 25 >> 1;
+            document.getElementById('resultado4').textContent = 10 << 4;
+
+        </script>
+
+</body>
+</html>
