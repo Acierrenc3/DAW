@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/T2/Tarea/EJ1/estilos.css">
+    <title>Tablas</title>
+</head>
+
+<body>
+    <h1>Tablas del 7, 8 y 9</h1>
+
+    <div class="table-container">
+        <table class="table">
+            <ul>
+                <h2>Tabla de multiplicar del 7</h2>
+                <script>
+                    console.log("Tabla de multiplicar del 7:");
+                    for (let i = 1; i <= 10; i++) {
+                        document.write(`<li>7 x ${i} = ${7 * i}</li>`);
+                    }
+                </script>
+            </ul>
+        </table>
+
+        <table class="table">
+            <ul>
+                <h2>Tabla de sumar del 8</h2>
+                <script>
+                    console.log("Tabla de sumar del 8:");
+                    let j = 1;
+                    while (j <= 10) {
+                        document.write(`<li>8 + ${j} = ${8 + j}</li>`);
+                        j++;
+                    }
+                </script>
+            </ul>
+        </table>
+
+        <table class="table">
+            <ul>
+                <h2>Tabla de dividir del 9</h2>
+                <script>
+                    let k = 1;
+                    do {
+                        let num = 9/k;
+                        let n = num.toFixed(2);
+                        document.write(`<li>9 / ${k} = ${n}</li>`);
+                        k++;
+                    } while (k <= 10);
+                </script>
+            </ul>
+        </table>
+    </div>
+</body>
+
+</html>
