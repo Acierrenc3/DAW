@@ -1,5 +1,5 @@
 <h1>Calculadora IF</h1>
-<link rel="stylesheet" href="/T2/Tarea/EJ3/estilos.css" />
+<link rel="stylesheet" href="/Tarea/EJ3/estilos.css" />
 <br />
 <form>
   <div id="calculadora">
@@ -42,6 +42,7 @@
 </form>
 
 <script>
+  //Realizamos una unica funcion con un parametro operacion, en donde en dicha funcion declaramos dos variables (n1 y n2) y otra para el total de la operacion.
   function operar(operacion) {
     let numero1 = parseFloat(document.getElementById("numero1").value);
     let numero2 = parseFloat(document.getElementById("numero2").value);
@@ -49,6 +50,7 @@
     let totales;
 
     if (operacion === "+") {
+      //Cambiamos la mayoria de funciones, y dentro de la creada añadimos el condicional IF que se nos pide, añadimos también un método propio de JS alert() para que no pueda dividir por 0.
       totales = numero1 + numero2;
     } else if (operacion === "-") {
       totales = numero1 - numero2;
@@ -61,7 +63,7 @@
         alert("No se puede dividir por 0");
       }
     } else {
-      alert("Operador no encontrado");
+      alert("Operador no encontrado"); //Tambien añadimos un segundo alert por si el usuario mediante la consola del navegador utiliza un operador no reconocido en nuestra calculadora (&,%,?...)
     }
 
     document.getElementById("totales").value = totales.toFixed(2);

@@ -40,13 +40,17 @@
 </form>
 
 <script>
+  //Realizamos una unica funcion con un parametro operacion, en donde en dicha funcion declaramos dos variables (n1 y n2) y otra para el total de la operacion.
+
   function operar(operacion) {
     let numero1 = parseFloat(document.getElementById("numero1").value);
     let numero2 = parseFloat(document.getElementById("numero2").value);
 
     let totales;
 
-    switch (operacion) {
+    switch (
+      operacion //Cambiamos la mayoria de funciones, y dentro de la creada añadimos la estructura Switch que se nos pide, añadimos también un método propio de JS alert() para que no pueda dividir por 0.
+    ) {
       case "+":
         totales = numero1 + numero2;
         break;
@@ -69,7 +73,7 @@
         break;
 
       default:
-        alert("Operador no encontrado");
+        alert("Operador no encontrado"); //Tambien añadimos un segundo alert por si el usuario mediante la consola del navegador utiliza un operador no reconocido en nuestra calculadora (&,%,?...)
         break;
     }
 
