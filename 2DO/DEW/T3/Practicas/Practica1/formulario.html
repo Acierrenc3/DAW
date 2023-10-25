@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/T3/Practicas/Practica1/estilos.css"
+    />
+  </head>
+  <body>
+    <div class="formulario">
+      <form action="/my-handling-form-page" method="post" id="formulario">
+        <ul>
+          <li>
+            <label for="name">Nombre Completo:</label>
+            <input type="text" id="nombre" name="user_name" required />
+          </li>
+          <li>
+            <label for="mail">Correo electrónico:</label>
+            <input type="email" id="email" name="user_mail" required />
+          </li>
+          <li>
+            <label for="address">Calle</label>
+            <input type="text" id="direccion" name="user_address" required />
+          </li>
+          <li>
+            <label for="address">Codigo Postal</label>
+            <input type="number" id="cpostal" name="user_postal" required />
+          </li>
+          <li>
+            <label for="address">Localidad</label>
+            <input type="text" id="localidad" name="user_locality" required />
+          </li>
+          <li>
+            <label for="address">Municipio</label>
+            <input
+              type="text"
+              id="municipio"
+              name="user_municipality"
+              required
+            />
+          </li>
+          <li>
+            <label for="phone">Telefono</label>
+            <input type="number" id="telefono" name="user_phone" required />
+          </li>
+          <li>
+            <input type="submit" value="Enviar" required />
+          </li>
+        </ul>
+      </form>
+    </div>
+    <div id="resultado" class="resultado"></div>
+    <script src="/T3/Practicas/Practica1/script.js"></script>
+  </body>
+</html>
