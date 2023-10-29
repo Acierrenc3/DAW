@@ -1,0 +1,32 @@
+<!--El objeto screen en JavaScript proporciona información sobre la pantalla o el monitor del dispositivo del usuario. 
+    Ésto es especialmente útil en el desarrollo de aplicaciones web en entorno cliente
+     para adaptar el contenido y la interfaz de usuario a las características del dispositivo. 
+    A continuación, se muestran dos ejemplos de uso del objeto screen:-->
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Información de la Pantalla</title>
+  </head>
+
+  <body>
+    <script>
+      // Accede a la información de la pantalla
+
+      var screenWidth = window.screen.width;
+
+      var screenHeight = window.screen.height;
+
+      // Muestra la información en la página
+
+      document.write(
+        "<p>Ancho de la pantalla: " + screenWidth + " píxeles</p>"
+      );
+
+      document.write(
+        "<p>Alto de la pantalla: " + screenHeight + " píxeles</p>"
+      );
+    </script>
+  </body>
+</html>

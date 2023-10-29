@@ -35,11 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
         Municipio: ${municipio}<br/>
         Telefono: ${telefono}`;
 
-        const nuevaVentana = window.open(
-          "",
-          "Resultado del formulario",
-          "width=400,height=400"
-        );
+        const nuevaVentana = window.open("", resultado, "width=400,height=400");
 
         nuevaVentana.document.open();
         nuevaVentana.document.write(resultado.innerHTML);

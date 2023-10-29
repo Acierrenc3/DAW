@@ -1,0 +1,58 @@
+<!--Existen una serie de funciones útiles para manejar el tiempo en JavaScript:
+setTimeout(). 
+Permite dos parámetros de entrada: el primero, una función a ejecutar y el segundo, el intervalo de tiempo (en milisegundos) en el que la función se ejecutará.
+setInterval(). Esta función actúa como la anterior pero de forma periódica, según los milisegundos establecidos como segundo parámetro.
+clearInterval(). Permite eliminar los intervalos de tiempo establecidos con la función setInterval().
+Mediante estas funciones, se puede crear un reloj que se actualice cada segundo en nuestra web:-->
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Reloj</title>
+    <style>
+      #reloj-container {
+        background-color: black;
+        color: white;
+        text-align: center;
+        font-size: 36px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="reloj-container"></div>
+    <script>
+      function crono() {
+        let miFecha = new Date();
+        let horas = miFecha.getHours();
+        let minutos = miFecha.getMinutes();
+        let segundos = miFecha.getSeconds();
+
+        if (horas > 12) {
+          ampm = "pm";
+          horas -= 12;
+        } else {
+          ampm = "am";
+        }
+        if (horas < 10) {
+          horas = "0" + horas;
+        }
+        if (minutos < 10) {
+          minutos = "0" + minutos;
+        }
+        if (segundos < 10) {
+          segundos = "0" + segundos;
+        }
+
+        let texto = (document.getElementById("reloj-container").innerHTML =
+          horas + ":" + minutos + ":" + segundos + " " + ampm);
+      }
+      window.onload = setInterval(crono, 1000);
+    </script>
+  </body>
+</html>

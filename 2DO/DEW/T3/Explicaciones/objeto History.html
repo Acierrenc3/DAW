@@ -1,0 +1,28 @@
+<!--El objeto history en JavaScript proporciona acceso y control sobre el historial de navegación del usuario en su sesión actual. 
+    Esto es útil para realizar operaciones de navegación, como retroceder o avanzar en el historial del navegador. Un ejemplo de su uso se muestra a continuación:-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Uso del Objeto History</title>
+  </head>
+  <body>
+    <button onclick="irAtras()">Retroceder</button>
+    <button onclick="irAdelante()">Avanzar</button>
+
+    <script>
+      function irAtras() {
+        // Retrocede una página en el historial
+        window.history.back();
+      }
+
+      function irAdelante() {
+        // Avanza una página en el historial
+        window.history.forward();
+      }
+    </script>
+  </body>
+</html>
+
+<!--En este ejemplo, se utilizan dos botones para retroceder y avanzar en el historial del navegador. Los métodos back() y forward() 
+    del objeto history permiten realizar estas operaciones de navegación.-->
