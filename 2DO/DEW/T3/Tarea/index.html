@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TAREA DEW T3</title>
+  </head>
+  <body>
+    <button id="abrirVentana" onclick="ventanaNueva()">Abrir Ventana</button>
+    <button id="calcularDatos" onclick="calcularDatos()">Calcular Datos</button>
+    <div id="resultados"></div>
+  </body>
+  <script>
+    function ventanaNueva() {
+      //Declaramos variable ventanNueva
+      const ventanaNueva = window.open("", "", "width=800, height=600");
+
+      //Escribimos en la nueva ventana los datos que nos pide el ejercicio:
+      ventanaNueva.document.write("<h3>Ejemplo de Ventana Nueva</h3>");
+      ventanaNueva.document.write(
+        "URL COMPLETA:" + ventanaNueva.location.href + " <br/>"
+      );
+      ventanaNueva.document.write(
+        "Protocolo Usado: " + ventanaNueva.location.protocol + " <br/>"
+      );
+      ventanaNueva.document.write(
+        "Nombre en codigo del Navegador: " + ventanaNueva.appCodeName + " <br/>"
+      );
+
+      //Verificamos si el usuario tiene instalado Java en su navegador:
+      if (ventanaNueva.navigator.javaEnabled()) {
+        ventanaNueva.document.write("Java SI está operativo");
+      } else {
+        ventanaNueva.document.write("Java NO está operativo");
+      }
+
+      //Añadimos el Iframe al final
+      ventanaNueva.document.write(
+        '<iframe src="https://www.bing.com" width="800" height="600"></iframe>'
+      );
+    }
+
+    function calcularDatos() {
+      // Solicita datos al usuario
+      const nombre = prompt("Introduzca su nombre y apellidos:");
+      const dia = prompt("Introduzca DIA de nacimiento:");
+      const mes = prompt("Introduzca MES de nacimiento:");
+      const anio = prompt("Introduzca AÑO de nacimiento:");
+
+      // Calcula la edad
+      const fechaNac = new Date(anio, mes - 1, dia); //Se hace el mes -1 porque el objeto Date en JS representa los meses del 0 al 11 (Es un array)
+      const ahora = new Date(); //Por ello al instanciarlo hay que restarle 1 para que haga una representacion real (Del 1 al 12)
+      const edad = ahora.getFullYear() - fechaNac.getFullYear();
+
+      // Realiza los cálculos necesarios
+      const coseno180 = Math.cos(180 * (Math.PI / 180));
+      const numeros = [34, 67, 23, 75, 35, 19];
+      const numMay = Math.max(...numeros);
+      const numAzar = Math.floor(Math.random() * 1000);
+
+      // Muestra los resultados en la ventana principal
+      const resultados = document.getElementById("resultados"); //Con el id del Div creado, declaramos la variable resultados y con el backslash agregamos todos los datos de una vez
+      resultados.innerHTML = ` 
+        <h1>TAREA DWEC03</h1><hr />
+        Buenos días ${nombre}<br />
+        Tu nombre tiene ${nombre.length} caracteres, incluidos espacios.<br />
+        La primera letra A de tu nombre está en la posición: ${
+          nombre.indexOf("A") + 1
+        }<br />
+        La última letra A de tu nombre está en la posición: ${
+          nombre.lastIndexOf("A") + 1
+        }<br />
+        Tu nombre menos las 3 primeras letras es: ${nombre.substring(3)}<br />
+        Tu nombre todo en mayúsculas es: ${nombre.toUpperCase()}<br />
+        Tu edad es: ${edad} años.<br />
+        Naciste un feliz ${dia} del año ${anio}.<br />
+        El coseno de 180 es: ${coseno180}<br />
+        El número mayor de (34,67,23,75,35,19) es: ${numMay}<br />
+        Ejemplo de número al azar: ${numAzar}<br />
+    `;
+    }
+  </script>
+</html>
+
+<!--
+  Enunciado.
+Realizar una aplicación en JavaScript que realice lo siguiente:
+
+
+(Se recomienda usar Google Chrome para probar este ejercicio y desactivar los pop-ups)
+
+Abra una nueva ventana no redimensionable.
+Hacer una función y dentro de esa función:
+Escribir en la nueva ventana <h3>Ejemplo de Ventana Nueva</h3>
+URL Completa: XXXXX
+Protocolo utilizado: XXXXX
+Nombre en código del navegador: XXXXX
+Que detecte si está JAVA disponible en esa ventana del navegador y si es así que escriba:
+Java SI disponible en esta ventana, o bien.
+Java NO disponible en esta ventana.
+Que abra un iframe con el contenido de www.bing.com y de 800x600.
+Y ahora fuera del código de la función que siga haciendo lo siguiente:
+
+Que escriba en la ventana principal <h1>TAREA DWEC03</H2><HR />
+Que solicite: introduzca su nombre y apellidos.
+Que solicite: introduzca DIA de nacimiento.
+Que solicite: introduzca MES de nacimiento.
+Que solicite: introduzca AÑO de nacimiento.
+Una vez solicitados esos datos imprimirá en la ventana principal:
+Buenos dias XXXXX
+Tu nombre tiene XX caracteres, incluidos espacios.
+La primera letra A de tu nombre está en la posición: X
+La última letra A de tu nombre está en la posición: X
+Tu nombre menos las 3 primeras letras es: XXXXXXXX
+Tu nombre todo en mayúsculas es: XXXXXXXX
+Tu edad es: XX años.
+Naciste un feliz XXXXXX del año XXXX.
+El coseno de 180 es: XXXXXXXXXX
+El número mayor de (34,67,23,75,35,19) es: XX
+Ejemplo de número al azar: XXXXXXXXXX
+-->
