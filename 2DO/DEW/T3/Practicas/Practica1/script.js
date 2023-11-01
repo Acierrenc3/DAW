@@ -34,12 +34,13 @@ document.addEventListener("DOMContentLoaded", function () {
         Localidad: ${localidad}<br/>
         Municipio: ${municipio}<br/>
         Telefono: ${telefono}`;
-
+        //const nuevaVentana = window.open("indice.html", resultado, "width=400,height=400")
         const nuevaVentana = window.open("", resultado, "width=400,height=400");
 
         nuevaVentana.document.open();
         nuevaVentana.document.write(resultado.innerHTML);
         nuevaVentana.document.close();
+        formulario.document.close();
       }
     }
 
