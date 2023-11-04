@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Concesionario de Coches</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css" />
+  </head>
+  <body>
+    <h1>Concesionario de Coches</h1>
+
+    <div id="coches-list">
+      <!-- Lista de coches se mostrará aquí -->
+    </div>
+
+    <h2>Agregar Coche</h2>
+    <form id="coche-form">
+      <input type="text" id="modelo" placeholder="Modelo" required />
+      <input type="text" id="color" placeholder="Color" required />
+      <input type="text" id="matricula" placeholder="Matrícula" required />
+      <input type="number" id="anio" placeholder="Año" required />
+      <button type="button" id="agregar-btn">Agregar Coche</button>
+    </form>
+
+    <h2>Eliminar Coche</h2>
+    <form id="eliminar-coche-form">
+      <input
+        type="text"
+        id="eliminar-matricula"
+        placeholder="Matrícula a eliminar"
+        required
+      />
+      <button type="button" id="eliminar-btn">Eliminar Coche</button>
+    </form>
+
+    <h2>Mostrar Coches</h2>
+    <button type="button" id="mostrar-coches-btn">
+      Mostrar Coches en Nueva Ventana
+    </button>
+
+    <script src="concesionario.js"></script>
+  </body>
+</html>
