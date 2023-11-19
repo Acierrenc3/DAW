@@ -64,7 +64,6 @@ class Sphere {
     }
   }
 }
-
 // Preparar canvas (ventana completa) y context
 const canvas = document.getElementById("myCanvas");
 canvas.width = window.innerWidth;
