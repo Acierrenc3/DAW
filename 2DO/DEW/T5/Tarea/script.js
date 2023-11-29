@@ -1,256 +1,130 @@
-//Cuando todos los elementos del formulario estén cargados se llamará a la función iniciar
-
-window.onload = iniciar;
-
-function iniciar() {
-  // Función para obtener el valor de una cookie
-  function getCookie(nombre) {
-    const valor = `; ${document.cookie}`;
-    const partes = valor.split(`; ${nombre}=`);
-    if (partes.length === 2) return partes.pop().split(";").shift();
-  }
-
-  // Función para establecer el valor de una cookie
-  function setCookie(nombre, valor) {
-    document.cookie = `${nombre}=${valor}; path=/`;
-  }
-
-  // Función para convertir a mayúsculas los campos NOMBRE y APELLIDOS al perder el foco
-  function convertirMayusculas(elemento) {
-    elemento.value = elemento.value.toUpperCase();
-  }
-
-  // Función para validar los campos NOMBRE y APELLIDOS
-  function validarNombreYApellidos() {
-    const nombre = document.getElementById("nombre");
-    const apellidos = document.getElementById("apellidos");
-    const erroresContainer = document.getElementById("errores");
-
-    //Usamos el .trim para limpiar los Espacios al principio y final de los campos:
-    if (nombre.value.trim() === "" || apellidos.value.trim() === "") {
-      erroresContainer.innerHTML =
-        "Nombre y apellidos son campos obligatorios.";
-      if (nombre.value.trim() === "") {
-        nombre.classList.add("error");
-        nombre.focus();
-      } else {
-        nombre.classList.remove("error");
-      }
-
-      if (apellidos.value.trim() === "") {
-        apellidos.classList.add("error");
-        apellidos.focus();
-      } else {
-        apellidos.classList.remove("error");
-      }
-
-      return false;
-    }
-
-    // Limpiar errores y estilos si no hay problemas
-    erroresContainer.innerHTML = "";
-    nombre.classList.remove("error");
-    apellidos.classList.remove("error");
-
-    return true;
-  }
-
-  // Función para validar la EDAD
-  function validarEdad() {
-    const edad = document.getElementById("edad");
-    const erroresContainer = document.getElementById("errores");
-
-    if (isNaN(edad.value) || edad.value < 0 || edad.value > 105) {
-      erroresContainer.innerHTML = "La edad debe ser un número entre 0 y 105.";
-      edad.classList.add("error");
-      edad.focus();
-      return false;
-    }
-
-    // Limpiar errores y estilos si no hay problemas
-    erroresContainer.innerHTML = "";
-    edad.classList.remove("error");
-
-    return true;
-  }
-
-  // Función para validar el NIF con expresión regular
-  function validarNIF() {
-    const nif = document.getElementById("nif");
-    const erroresContainer = document.getElementById("errores");
-
-    // Expresión regular para el NIF
-    const expresion = /^\d{8}-[a-zA-Z]$/;
-
-    if (!expresion.test(nif.value)) {
-      erroresContainer.innerHTML = "El NIF no es válido.";
-      nif.classList.add("error");
-      nif.focus();
-      return false;
-    }
-
-    // Limpiar errores y estilos si no hay problemas
-    erroresContainer.innerHTML = "";
-    nif.classList.remove("error");
-
-    return true;
-  }
-
-  // Función para validar el E-MAIL con expresión regular
-  function validarEmail() {
-    const email = document.getElementById("email");
-    const erroresContainer = document.getElementById("errores");
-
-    // Expresión regular para el E-MAIL
-    const expresion = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-    if (!expresion.test(email.value)) {
-      erroresContainer.innerHTML = "El E-mail no es válido.";
-      email.classList.add("error");
-      email.focus();
-      return false;
-    }
-
-    // Limpiar errores y estilos si no hay problemas
-    erroresContainer.innerHTML = "";
-    email.classList.remove("error");
-
-    return true;
-  }
-
-  // Función para validar la selección de PROVINCIA
-  function validarProvincia() {
-    const provincia = document.getElementById("provincia");
-    const erroresContainer = document.getElementById("errores");
-
-    if (provincia.value === "0") {
-      erroresContainer.innerHTML = "Seleccione una provincia.";
-      provincia.classList.add("error");
-      provincia.focus();
-      return false;
-    }
-
-    // Limpiar errores y estilos si no hay problemas
-    erroresContainer.innerHTML = "";
-    provincia.classList.remove("error");
-
-    return true;
-  }
-
-  // Función para validar la FECHA con expresión regular
-  function validarFecha() {
-    const fecha = document.getElementById("fecha");
-    const erroresContainer = document.getElementById("errores");
-
-    // Expresión regular para la FECHA
-    const expresion =
-      /^(0[1-9]|1[0-9]|2[0-9]|3[0-1])[-/](0[1-9]|1[0-2])[-/]\d{4}$/;
-
-    if (!expresion.test(fecha.value)) {
-      erroresContainer.innerHTML =
-        "La fecha no es válida. Utilice el formato dd/mm/aaaa o dd-mm-aaaa.";
-      fecha.classList.add("error");
-      fecha.focus();
-      return false;
-    }
-
-    // Limpiar errores y estilos si no hay problemas
-    erroresContainer.innerHTML = "";
-    fecha.classList.remove("error");
-
-    return true;
-  }
-
-  // Función para validar el TELEFONO con expresión regular
-  function validarTelefono() {
-    const telefono = document.getElementById("telefono");
-    const erroresContainer = document.getElementById("errores");
-
-    // Expresión regular para el TELEFONO
-    const expresion = /^\d{9}$/;
-
-    if (!expresion.test(telefono.value)) {
-      erroresContainer.innerHTML =
-        "El teléfono no es válido. Debe contener 9 dígitos.";
-      telefono.classList.add("error");
-      telefono.focus();
-      return false;
-    }
-
-    // Limpiar errores y estilos si no hay problemas
-    erroresContainer.innerHTML = "";
-    telefono.classList.remove("error");
-
-    return true;
-  }
-
-  // Función para validar la HORA con expresión regular
-  function validarHora() {
-    const hora = document.getElementById("hora");
-    const erroresContainer = document.getElementById("errores");
-
-    // Expresión regular para la HORA
-    const expresion = /^([01]\d|2[0-3]):([0-5]\d)$/;
-
-    if (!expresion.test(hora.value)) {
-      erroresContainer.innerHTML =
-        "La hora no es válida. Utilice el formato hh:mm.";
-      hora.classList.add("error");
-      hora.focus();
-      return false;
-    }
-
-    // Limpiar errores y estilos si no hay problemas
-    erroresContainer.innerHTML = "";
-    hora.classList.remove("error");
-
-    return true;
-  }
-
-  // Función para manejar la confirmación de envío del formulario
-  function confirmarEnvio() {
-    const confirmacion = confirm("¿Está seguro de enviar el formulario?");
-    if (confirmacion) {
-      // Incrementar el contador de intentos en la cookie
-      const intentos = parseInt(getCookie("intentos")) || 0;
-      setCookie("intentos", intentos + 1);
-
-      // Actualizar el contenido del contenedor "intentos"
-      document.getElementById(
-        "intentos"
-      ).innerHTML = `Intento de Envíos del formulario: ${intentos + 1}`;
-
-      // Envío del formulario
-      document.getElementById("formulario").submit();
-    }
-  }
-
-  // Asociar funciones a eventos
-  document.getElementById("nombre").addEventListener("blur", function () {
-    convertirMayusculas(this);
-  });
-
-  document.getElementById("apellidos").addEventListener("blur", function () {
-    convertirMayusculas(this);
-  });
-
+document.addEventListener("DOMContentLoaded", function () {
   document
     .getElementById("formulario")
     .addEventListener("submit", function (event) {
-      // Validar campos antes del envío
-      if (
-        !validarNombreYApellidos() ||
-        !validarEdad() ||
-        !validarNIF() ||
-        !validarEmail() ||
-        !validarProvincia() ||
-        !validarFecha() ||
-        !validarTelefono() ||
-        !validarHora()
-      ) {
-        event.preventDefault(); // Cancelar el envío si hay errores
-      } else {
-        confirmarEnvio(); // Pedir confirmación antes de enviar
-      }
+      event.preventDefault();
+      validarFormulario();
     });
-}
+
+  document.getElementById("nombre").addEventListener("blur", function () {
+    this.value = this.value.toUpperCase();
+  });
+
+  document.getElementById("apellidos").addEventListener("blur", function () {
+    this.value = this.value.toUpperCase();
+  });
+
+  function validarFormulario() {
+    // Lógica de validación aquí
+    var nombre = document.getElementById("nombre").value;
+    var apellidos = document.getElementById("apellidos").value;
+    var edad = document.getElementById("edad").value;
+    var nif = document.getElementById("nif").value;
+    var email = document.getElementById("email").value;
+    var provincia = document.getElementById("provincia").value;
+    var fecha = document.getElementById("fecha").value;
+    var telefono = document.getElementById("telefono").value;
+    var hora = document.getElementById("hora").value;
+
+    // Validar nombre y apellidos
+    if (!nombre || !apellidos) {
+      document.getElementById("errores").innerHTML =
+        "Por favor, complete los campos de nombre y apellidos.";
+      if (!nombre) {
+        document.getElementById("nombre").focus();
+      } else {
+        document.getElementById("apellidos").focus();
+      }
+      return;
+    }
+
+    // Validar edad
+    if (isNaN(edad) || edad < 0 || edad > 105) {
+      document.getElementById("errores").innerHTML =
+        "La edad debe ser un número entre 0 y 105.";
+      document.getElementById("edad").focus();
+      return;
+    }
+
+    // Validar NIF
+    var nifRegex = /^\d{8}-[a-zA-Z]$/;
+    if (!nifRegex.test(nif)) {
+      document.getElementById("errores").innerHTML =
+        "Formato de NIF inválido. Debe tener 8 números, un guión y una letra.";
+      document.getElementById("nif").focus();
+      return;
+    }
+
+    // Validar email
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      document.getElementById("errores").innerHTML =
+        "Formato de correo electrónico inválido.";
+      document.getElementById("email").focus();
+      return;
+    }
+
+    // Validar provincia
+    if (provincia === "0") {
+      document.getElementById("errores").innerHTML =
+        "Por favor, seleccione una provincia.";
+      document.getElementById("provincia").focus();
+      return;
+    }
+
+    // Validar fecha
+    var fechaRegex = /^(\d{2}\/\d{2}\/\d{4})|(\d{2}-\d{2}-\d{4})$/;
+    if (!fechaRegex.test(fecha)) {
+      document.getElementById("errores").innerHTML =
+        "Formato de fecha inválido. Use dd/mm/aaaa o dd-mm-aaaa.";
+      document.getElementById("fecha").focus();
+      return;
+    }
+
+    // Validar teléfono
+    var telefonoRegex = /^\d{9}$/;
+    if (!telefonoRegex.test(telefono)) {
+      document.getElementById("errores").innerHTML =
+        "El número de teléfono debe tener 9 dígitos.";
+      document.getElementById("telefono").focus();
+      return;
+    }
+
+    // Validar hora
+    var horaRegex = /^([01]\d|2[0-3]):[0-5]\d$/;
+    if (!horaRegex.test(hora)) {
+      document.getElementById("errores").innerHTML =
+        "Formato de hora inválido. Use hh:mm.";
+      document.getElementById("hora").focus();
+      return;
+    }
+
+    // Confirmación de envío
+    var confirmacion = confirm(
+      "¿Está seguro de que desea enviar el formulario?"
+    );
+    if (confirmacion) {
+      // Aquí realizarías el envío de datos (puedes agregar esa lógica aquí)
+      alert("Formulario enviado correctamente");
+    } else {
+      alert("Envío de formulario cancelado");
+    }
+  }
+
+  // Obtener y mostrar el número de intentos desde la cookie
+  var intentosCookie = obtenerIntentosCookie();
+  document.getElementById("intentos").innerHTML =
+    "Intento de Envíos del formulario: " + intentosCookie;
+
+  function obtenerIntentosCookie() {
+    var intentosCookie = document.cookie.replace(
+      /(?:(?:^|.*;\s*)intentos\s*=\s*([^;]*).*$)|^.*$/,
+      "$1"
+    );
+    return parseInt(intentosCookie) || 0;
+  }
+
+  function guardarIntentosCookie(intentos) {
+    document.cookie = "intentos=" + intentos;
+  }
+});
