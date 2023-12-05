@@ -1,0 +1,12 @@
+Actividad 1. Utiliza el siguiente código para observar cómo se puede manejar el modelo de captura de eventos o de burbujeo según el modelo de registro avanzado de eventos:
+
+<div id="principal"> Este es el contenedor principal <div id="secundario"> Este es el contenedor secundario <input id="miboton" type="button" value="OK"> </div> </div>
+
+Y el archivo .js:
+
+
+window.onload = function() { document.getElementById("principal").addEventListener("click", function () { alert("Pulsado el contenedor principal"); }, 
+false); // estamos utilizando burbujeo document.getElementById("secundario").addEventListener("click", function () { alert("Pulsado el contenedor secundario"); }, 
+false); // estamos utilizando burbujeo document.getElementById("miboton").addEventListener("click", function () { alert("Pulsado el botón"); }, false); // estamos utilizando burbujeo }
+
+Prueba que funciona el código tal y como está configurado para manejar el evento mediante el método del burbujeo. Luego cambia el método de burbujeo por el de captura.

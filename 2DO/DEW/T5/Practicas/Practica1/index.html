@@ -1,0 +1,32 @@
+<div id="principal">
+  Este es el contenedor principal
+  <div id="secundario">
+    Este es el contenedor secundario
+    <input id="miboton" type="button" value="OK" />
+  </div>
+</div>
+<script>
+  window.onload = function () {
+    document.getElementById("principal").addEventListener(
+      "click",
+      function () {
+        alert("Pulsado el contenedor principal");
+      },
+      false
+    );
+    document.getElementById("secundario").addEventListener(
+      "click",
+      function () {
+        alert("Pulsado el contenedor secundario");
+      },
+      false
+    );
+    document.getElementById("miboton").addEventListener(
+      "click",
+      function () {
+        alert("Pulsado el botón");
+      },
+      false
+    );
+  };
+</script>

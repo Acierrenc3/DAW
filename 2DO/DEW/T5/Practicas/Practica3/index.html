@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Actividad 3</title>
+  </head>
+  <body>
+    <label for="miInput">Campo de Entrada de Texto:</label>
+    <input type="text" id="miInput" />
+
+    <script>
+      // Agregamos un eventListener al campo de entrada de texto
+      document
+        .getElementById("miInput")
+        .addEventListener("keydown", function (event) {
+          // Mostramos un mensaje de alerta cuando se presiona una tecla
+          alert("Tecla presionada: " + event.key);
+        });
+    </script>
+  </body>
+</html>

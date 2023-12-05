@@ -1,0 +1,5 @@
+Actividad 2. Modifica la actividad anterior con la siguiente línea de código y configura la propagación para captura. A continuación, 
+haz clic en el contenedor primario ¿qué función cumple la modificación realizada?
+
+
+document.getElementById("secundario").addEventListener("click", function (e) { alert("Pulsado el contenedor secundario y paramos la propagación"); e.stopPropagation(); }, true);
