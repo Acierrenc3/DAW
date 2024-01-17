@@ -1,0 +1,23 @@
+
+Ejercicio 1 (6.5 puntos): Crear una clase/objeto para el manejo de datos de libros. Se debe diseñar una clase/objeto llamada Libro, con las siguientes propiedades:
+
+1. ISBN (Número Internacional Normalizado del Libro).
+2. Autor.
+3. Título.
+4. Año de publicación.
+5. Género.
+6. Historial de préstamos (array).
+
+Esta clase/objeto debe tener como parámetros de entrada: ISBN, autor, título, año de publicación, y género. Debe estar programada para que, cada vez que se cree un nuevo libro, se muestre un mensaje (por alerta o consola) indicando la creación de este y sus datos principales.
+
+A continuación, se deben incorporar los siguientes métodos para la clase/objeto Libro:
+
+1. Métodos para modificar ISBN, autor, título, año de publicación y género. Estos métodos deben solicitar confirmación antes de realizar cambios y permitir la introducción del nuevo valor mediante un prompt. Tras la modificación, se debe emitir una alerta con el cambio efectuado.
+
+2. Método para agregar un préstamo al historial de préstamos. Cada entrada en el historial debe incluir en el array una estructura con los siguientes índices: ID, fecha de préstamo, fecha de devolución, lector y estado del libro. Los valores se introducirán por prompt.
+
+3. Método para modificar una entrada en el historial de préstamos. Este método debe buscar en el historial una entrada por ID y permitir modificar los valores mediante prompts.
+
+4. Método para mostrar el historial de préstamos. Este método mostrará en consola todas las entradas del historial.
+
+Los mensajes y funciones deben adaptarse según la lógica del manejo de datos de libros, enfocándose en la gestión y seguimiento de los mismos en un contexto como una biblioteca o una librería.

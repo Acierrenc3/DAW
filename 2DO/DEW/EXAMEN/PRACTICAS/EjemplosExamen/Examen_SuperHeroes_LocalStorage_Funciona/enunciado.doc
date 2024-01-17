@@ -1,0 +1,26 @@
+Ejercicio 1 (6.5 puntos). Para este ejercicio se pide crear una clase/objeto para el manejo de datos de superhéroes. En primer lugar, se solicita la creación de una clase/objeto denominada Superheroe, cuyas propiedades serán:
+
+Numero Identificación del superhéroe (NIS)
+Nombre
+Poder
+Año de debut
+Color del traje
+Historial (array)
+Esta clase/objeto debe tener como únicos parámetros de entrada: ID, nombre, poder, año de debut, color del traje y programarse para que cada vez que se instancie un nuevo superhéroe se muestre (por alerta o consola) un mensaje indicando la creación de un nuevo superhéroe y los datos del mismo.
+
+A continuación, se deben agregar los siguientes métodos para la clase/objeto Superheroe:
+
+Métodos para modificar ID, nombre, poder, año de debut y color del traje:
+
+Todos estos métodos deben solicitar confirmación antes de modificar los datos y permitir introducir el nuevo valor mediante un prompt.
+Una vez modificados, emitir una alerta con el cambio realizado.
+Método para agregar al historial un episodio al array historial:
+
+Cada entrada en el historial debe crear dentro del array una estructura con los siguientes índices: ID, fecha, evento, villano enfrentado y compañero de equipo.
+Los valores se introducirán por prompt.
+Método para modificar una entrada en el historial:
+
+Este método debe buscar en el historial una entrada por ID y permitir modificar los valores mediante prompts.
+Método para mostrar el historial:
+
+Mostrar, en consola, todas las entradas del historial.

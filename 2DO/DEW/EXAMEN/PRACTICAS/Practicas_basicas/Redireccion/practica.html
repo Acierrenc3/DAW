@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redireccion</title>
+    <style>
+      #boton {
+        padding: 10px 20px;
+        background-color: #4ca5d8;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        height: 100px;
+        width: 200px;
+      }
+      #boton:hover {
+        background-color: #1b3eda;
+      }
+      #boton:active {
+        background-color: #a154ce;
+      }
+
+      div {
+        display: flex;
+        justify-content: center;
+
+        position: absolute;
+
+        top: 50%;
+
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <button id="boton" onclick="location.href='redireccion.html'">
+        ¡Redirijeme!
+      </button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+Ejercicio 1 (6.5 puntos). Para este ejercicio se pide crear una clase/objeto para el manejo de datos de vehículos. En primer lugar, se solicita la creación de una clase/objeto denominada Vehiculo, cuyas propiedades serán:
+
+Número de identificación del vehículo (NIV)
+Marca
+Modelo
+Año de fabricación
+Color
+Historial (array).
+Esta clase/objeto debe tener como únicos parámetros de entrada: NIV, marca, modelo, año de fabricación, color y programarse para que cada vez que se instancie un nuevo vehículo se muestre (por alerta o consola) un mensaje indicando la creación de un nuevo vehículo y los datos del mismo.
+
+A continuación, se deben agregar los siguientes métodos para la clase/objeto Vehiculo:
+
+Métodos para modificar NIV, marca, modelo, año de fabricación y color. Todos estos métodos deben solicitar confirmación antes de modificar los datos y permitir introducir el nuevo valor mediante un prompt. Una vez modificados, emitir una alerta con el cambio realizado.
+Método para agregar al historial un episodio al array historial. Cada entrada en el historial debe crear dentro del array una estructura con los siguientes índices: ID, fecha, diagnóstico, tratamiento y mecánico responsable. Los valores se introducirán por prompt.
+Método para modificar una entrada en el historial. Este método debe buscar en el historial una entrada por ID y permitir modificar los valores mediante prompts.
+Método para mostrar el historial. Mostrar, en consola, todas las entradas del historial.
+Adaptar los mensajes y las funciones según la lógica del manejo de datos de vehículos.

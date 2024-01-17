@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Concesionario de Coches</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css" />
+  </head>
+  <body>
+    <!-- Contenedor principal -->
+    <div class="container">
+      <!-- Título principal -->
+      <h1>Concesionario de Coches</h1>
+
+      <!-- Formulario para agregar coches -->
+      <div class="form-container">
+        <form id="coche-form">
+          <h2>Agregar Coche</h2>
+          <div class="form-group">
+            <label for="modelo">Modelo:</label>
+            <input type="text" id="modelo" placeholder="Modelo" required />
+          </div>
+          <div class="form-group">
+            <label for="color">Color:</label>
+            <input type="text" id="color" placeholder="Color" required />
+          </div>
+          <div class="form-group">
+            <label for="matricula">Matrícula:</label>
+            <input
+              type="text"
+              id="matricula"
+              placeholder="Matrícula"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="anio">Año:</label>
+            <input type="number" id="anio" placeholder="Año" required />
+          </div>
+          <button type="button" id="agregar-btn">Agregar Coche</button>
+        </form>
+
+        <!-- Formulario para eliminar coches -->
+        <form id="eliminar-coche-form">
+          <div class="form-group">
+            <h2>Eliminar Coche</h2>
+            <label for="eliminar-matricula">Matrícula a eliminar:</label>
+            <input
+              type="text"
+              id="eliminar-matricula"
+              placeholder="Matrícula a eliminar"
+              required
+            />
+          </div>
+          <button type="button" id="eliminar-btn">Eliminar Coche</button>
+        </form>
+      </div>
+
+      <!-- Botón para mostrar coches en una nueva ventana -->
+      <h2>Mostrar Coches</h2>
+      <button type="button" id="mostrar-coches-btn">
+        Mostrar Coches en Nueva Ventana
+      </button>
+    </div>
+
+    <!-- Lista de coches se mostrará aquí -->
+    <div id="coches-list"></div>
+
+    <script src="concesionario.js"></script>
+  </body>
+</html>

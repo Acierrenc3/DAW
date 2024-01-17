@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Examen Final Primera Evaluación. Ejercicio 2 - Coches</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <!-- Bloque 1: Coche nuevo -->
+        <div class="create-car-form">
+          <h2 style="font-size: 18px">Coche nuevo</h2>
+          <form>
+            <label for="niv">NIV:</label>
+            <input type="text" id="niv" name="niv" placeholder="NIV" required />
+
+            <label for="marca">Marca:</label>
+            <input
+              type="text"
+              id="marca"
+              name="marca"
+              placeholder="Marca"
+              required
+            />
+
+            <label for="modelo">Modelo:</label>
+            <input
+              type="text"
+              id="modelo"
+              name="modelo"
+              placeholder="Modelo"
+              required
+            />
+
+            <label for="Color">Color:</label>
+            <input
+              type="text"
+              id="color"
+              name="color"
+              placeholder="Color"
+              required
+            />
+
+            <label for="anoFabricacion">Año Fabricacion:</label>
+            <input
+              type="number"
+              id="anoFabricacion"
+              name="anoFabricacion"
+              placeholder="Año Fabricacion"
+              required
+            />
+
+            <button id="crearnuevo">Crear coche</button>
+          </form>
+        </div>
+      </div>
+      <div class="main-content">
+        <!-- Bloque 2: Visualizar y Modificar Coche -->
+        <div>
+          <div class="section-header">
+            <h2 style="font-size: 18px">Coche actual</h2>
+          </div>
+          <form>
+            <textarea
+              id="datoscoche"
+              name="datoscoche"
+              rows="8"
+              placeholder="Coche actual"
+            ></textarea>
+
+            <!-- Contenedor para los botones de modificación -->
+            <div class="modification-buttons">
+              <h2 style="font-size: 16px">Modificar:</h2>
+              <button type="button" id="modificarNiv">NIV</button>
+              <button type="button" id="modificarMarca">Marca</button>
+              <button type="button" id="modificarModelo">Modelo</button>
+              <button type="button" id="modificarColor">Color</button>
+              <button type="button" id="modificarAnoFabricacion">
+                Año de Fabricación
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Bloque 3: Historial de mantenimiento -->
+        <div>
+          <div class="section-header">
+            <h2 style="font-size: 18px">Historial de mantenimiento</h2>
+          </div>
+          <textarea
+            id="historialMantenimiento"
+            name="historialMantenimiento"
+            rows="10"
+            placeholder="Historial de mantenimiento"
+          ></textarea>
+          <!-- Botones para el historial de mantenimiento -->
+          <div>
+            <button type="button" id="realizarMantenimiento">
+              Realizar mantenimiento
+            </button>
+            <button type="button" id="modificarHistorial">
+              Modificar historial de mantenimiento
+            </button>
+            <button type="button" id="limpiarVentana">Limpiar ventana</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

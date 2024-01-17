@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Gestión de Trabajadores</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <!-- Bloque 1: Trabajador nuevo -->
+        <div class="create-worker-form">
+          <h2 style="font-size: 18px">Trabajador nuevo</h2>
+          <form>
+            <label for="id">ID:</label>
+            <input type="text" id="id" name="id" placeholder="ID" required />
+
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" name="dni" placeholder="DNI" required />
+
+            <label for="nombre">Nombre:</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Nombre"
+              required
+            />
+
+            <label for="apellidos">Apellidos:</label>
+            <input
+              type="text"
+              id="apellidos"
+              name="apellidos"
+              placeholder="Apellidos"
+              required
+            />
+
+            <label for="anoIngreso">Año de Ingreso:</label>
+            <input
+              type="text"
+              id="anoIngreso"
+              name="anoIngreso"
+              placeholder="Año de Ingreso"
+              required
+            />
+
+            <label for="cargo">Cargo:</label>
+            <input
+              type="text"
+              id="cargo"
+              name="cargo"
+              placeholder="Cargo"
+              required
+            />
+
+            <button id="crearNuevoTrabajador">Crear trabajador</button>
+          </form>
+        </div>
+      </div>
+      <div class="main-content">
+        <!-- Bloque 2: Visualizar y Modificar Trabajador -->
+        <div>
+          <div class="section-header">
+            <h2 style="font-size: 18px">Trabajador actual</h2>
+          </div>
+          <form>
+            <textarea
+              id="datosTrabajador"
+              name="datosTrabajador"
+              rows="8"
+              placeholder="Trabajador actual"
+            ></textarea>
+
+            <!-- Contenedor para los botones de modificación -->
+            <div class="modification-buttons">
+              <h2 style="font-size: 16px">Modificar:</h2>
+              <button type="button" id="modificarID">ID</button>
+              <button type="button" id="modificarDNI">DNI</button>
+              <button type="button" id="modificarNombre">Nombre</button>
+              <button type="button" id="modificarApellidos">Apellidos</button>
+              <button type="button" id="modificarAnoIngreso">
+                Año de Ingreso
+              </button>
+              <button type="button" id="modificarCargo">Cargo</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Bloque 3: Historial de tareas -->
+        <div>
+          <div class="section-header">
+            <h2 style="font-size: 18px">Historial de tareas</h2>
+          </div>
+          <textarea
+            id="historialTareas"
+            name="historialTareas"
+            rows="10"
+            placeholder="Historial de tareas"
+          ></textarea>
+          <!-- Botones para el historial de tareas -->
+          <div>
+            <button type="button" id="asignarTarea">Asignar tarea</button>
+            <button type="button" id="modificarTarea">
+              Modificar historial de tareas
+            </button>
+            <button type="button" id="limpiarVentana">Limpiar ventana</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./Trabajador.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

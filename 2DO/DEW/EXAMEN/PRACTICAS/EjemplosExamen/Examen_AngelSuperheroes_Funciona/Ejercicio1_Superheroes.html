@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Examen Final Primera Evaluación - Registro de Superhéroes</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <!-- Bloque 1: Superhéroe nuevo -->
+        <div class="create-hero-form">
+          <h2 style="font-size: 18px">Superhéroe nuevo</h2>
+          <form>
+            <label for="id">ID:</label>
+            <input type="text" id="id" name="id" placeholder="ID" required />
+
+            <label for="nombre">Nombre:</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Nombre"
+              required
+            />
+
+            <label for="poder">Poder:</label>
+            <input
+              type="text"
+              id="poder"
+              name="poder"
+              placeholder="Poder"
+              required
+            />
+
+            <label for="anioDebut">Año de Debut:</label>
+            <input
+              type="number"
+              id="anioDebut"
+              name="anioDebut"
+              placeholder="Año de Debut"
+              required
+            />
+
+            <label for="colorTraje">Color del Traje:</label>
+            <input
+              type="text"
+              id="colorTraje"
+              name="colorTraje"
+              placeholder="Color del Traje"
+              required
+            />
+
+            <button id="crearNuevoHeroe">Crear superhéroe</button>
+          </form>
+        </div>
+      </div>
+      <div class="main-content">
+        <!-- Bloque 2: Visualizar y Modificar Superhéroe -->
+        <div>
+          <div class="section-header">
+            <h2 style="font-size: 18px">Superhéroe actual</h2>
+          </div>
+          <form>
+            <textarea
+              id="datosSuperheroe"
+              name="datosSuperheroe"
+              rows="8"
+              placeholder="Superhéroe actual"
+            ></textarea>
+
+            <!-- Contenedor para los botones de modificación -->
+            <div class="modification-buttons">
+              <h2 style="font-size: 16px">Modificar:</h2>
+              <button type="button" id="modificarID">ID</button>
+              <button type="button" id="modificarNombre">Nombre</button>
+              <button type="button" id="modificarPoder">Poder</button>
+              <button type="button" id="modificarAnoDebut">Año de Debut</button>
+              <button type="button" id="modificarColorTraje">
+                Color del Traje
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Bloque 3: Historial de hazañas -->
+        <div>
+          <div class="section-header">
+            <h2 style="font-size: 18px">Historial de hazañas</h2>
+          </div>
+          <textarea
+            id="historialHazañas"
+            name="historialHazañas"
+            rows="10"
+            placeholder="Historial de hazañas"
+          ></textarea>
+          <!-- Botones para el historial de hazañas -->
+          <div>
+            <button type="button" id="agregarHazaña">Agregar hazaña</button>
+            <button type="button" id="modificarHistorial">
+              Modificar historial de hazañas
+            </button>
+            <!-- <button type="button" id="limpiarVentana">Limpiar ventana</button>-->
+          </div>
+        </div>
+        <p></p>
+        <div class="navigation-buttons">
+          <button type="button" id="primero">Primero</button>
+          <button type="button" id="anterior">Anterior</button>
+          <button type="button" id="siguiente">Siguiente</button>
+          <button type="button" id="ultimo">Último</button>
+        </div>
+        <p></p>
+        <div>
+          <button type="button" id="botonBorrarLocalStorage">Borrar Todo</button>
+        </div>
+        <!-- Bloque 4: Lista de Superhéroes -->
+        <div>
+          <div class="section-header">
+            <h2 style="font-size: 18px">Lista de Superhéroes</h2>
+          </div>
+          <ul id="listaSuperheroes"></ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="./Superheroe.js"></script>
+    <script src="./Script_LocalStorage.js"></script>
+  </body>
+</html>

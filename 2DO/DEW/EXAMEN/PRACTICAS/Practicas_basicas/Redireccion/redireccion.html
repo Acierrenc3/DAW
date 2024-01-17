@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirección o Saludo</title>
+  </head>
+  <body>
+    <script>
+      let numeroAleatorio = Math.floor(Math.random() * 11);
+
+      // Obtenenemos la hora actual
+      const horaActual = new Date().getHours();
+
+      if (numeroAleatorio <= 5) {
+        // Redirigimos al usuario a la página de Google
+        window.location.href = "https://www.google.com";
+      } else {
+        // Mostrar un saludo basado en la hora
+        if (horaActual < 12) {
+          alert("Buenos días");
+        } else {
+          alert("Buenas tardes");
+        }
+      }
+    </script>
+  </body>
+</html>
+
+<!--Actividad 2. Realiza una página web que redirija al usuario a la página de google (conservando el historial) 
+  si sacando un número de forma aleatoria entre 0 y 10 el mismo es menor o igual a 5. 
+  En caso contrario, que la página genere una alerta saludando con buenos días o buenas tardes en función de si es antes de las 12 am o después.-->

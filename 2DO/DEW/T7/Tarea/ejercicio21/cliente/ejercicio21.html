@@ -1,0 +1,162 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Ejercicio 21 - RSS</title>
+<script type="text/javascript">
+Object.prototype.get = function(etiqueta) {
+  return this.getElementsByTagName(etiqueta)[0].textContent;
+}
+
+var rss = {
+  canal: {},
+  items: []
+};
+
+window.onload = function(){
+  document.getElementById('mostrar').onclick = cargaRss;
+}
+
+function cargaRss(){
+  // Obtener URL de RSS
+  borrarLog();
+  log('Averiguar la URL del canal RSS');
+
+  var url_original = document.getElementById('url').value;
+  log('URL original es ' + url_original);
+
+  var url_rss = descubreRss(url_original);
+  log('La URL descubierta es ' + url_rss);
+
+  // Descargar canal RSS
+  log('Descargando canal RSS');
+  descargaRss(url_rss);
+}
+
+function descubreRss(url){
+  var peticion = new XMLHttpRequest();
+  peticion.onreadystatechange = function(){};
+  peticion.open('GET', 'http://localhost/RUTA_HASTA_ARCHIVO/descubreRss.php?url=' + encodeURIComponent(url), false);
+  peticion.send(null);
+
+  return peticion.responseText;
+}
+
+function descargaRss(url){
+  var peticion = new XMLHttpRequest();
+  peticion.onreadystatechange = procesaRss;
+  peticion.open('GET', 'http://localhost/RUTA_HASTA_ARCHIVO/proxy.php?url=' + encodeURIComponent(url) + '&ct=text/xml', true);
+  peticion.send(null);
+
+  function procesaRss(){
+    if (peticion.readyState == 4) {
+      if (peticion.status == 200) {
+        var xml = peticion.responseXML;
+
+        var canal = xml.getElementsByTagName('channel')[0];
+        var titulo = canal.getElementsByTagName('title')[0].textContent;
+        rss.canal.titulo = titulo;
+
+        if(canal.getElementsByTagName('image').length > 0) {
+          var url_imagen = canal.getElementsByTagName('image')[0].getElementsByTagName('url')[0].textContent;
+          rss.canal.titulo = '<img src="'+url_imagen+'" />'+rss.canal.titulo;
+        }
+
+        var enlace = canal.getElementsByTagName('link')[0].textContent;
+        rss.canal.enlace = enlace;
+
+        var items = xml.getElementsByTagName('item');
+        for (var i = 0; i < items.length; i++) {
+          var item = items[i];
+          var titulo = item.get('title');
+          var enlace = item.getElementsByTagName('link')[0].textContent;
+          var descripcion = item.getElementsByTagName('description')[0].textContent;
+          var fecha = item.getElementsByTagName('pubDate')[0].textContent;
+
+          rss.items[i] = {
+            titulo: titulo,
+            enlace: enlace,
+            descripcion: descripcion,
+            fecha: fecha
+          };
+        }
+        
+        muestraRss();
+      }
+    }
+  }
+}
+
+function muestraRss(){
+  document.getElementById('noticias').style.display = 'block';
+  document.getElementById('titulares').innerHTML = '';
+  document.getElementById('contenidos').innerHTML = '';
+
+  document.getElementById('titulo').innerHTML = '<a href="' + rss.canal.enlace + '">' + rss.canal.titulo + '</a>';
+
+  var titulares = document.getElementById('titulares');
+
+  for (var i = 0; i < rss.items.length; i++) {
+    titulares.innerHTML += '<a href="#" onclick="muestraElemento(' + i + ')">' + rss.items[i].titulo + '</a> <br/>';
+  }
+}
+
+function muestraElemento(indice){
+  var item = rss.items[indice];
+  var html = "";
+  html += "<h1><a href=\"" + item.enlace + "\">" + item.titulo + "</a></h1>";
+  if (item.fecha != undefined) {
+    html += "<h2>" + item.fecha + "</h2>";
+  }
+  html += "<p>" + item.descripcion + "</p>";
+
+  document.getElementById("contenidos").innerHTML = html;
+}
+
+function log(mensaje){
+  document.getElementById('info').innerHTML += mensaje + "<br/>";
+}
+
+function borrarLog(){
+  document.getElementById('info').innerHTML = "";
+}
+</script>
+<style type="text/css">
+body { font-family: Arial, Helvetica, sans-serif; }
+form { margin: 0; }
+#info { margin: 0; font-size: .7em; color: #777; }
+#noticias { 
+  position: absolute;
+  width: 80%;
+  margin-top: 1em;
+  border: 2px solid #369;
+  padding: 0;
+  display: none;
+}
+#titulo { background-color: #DDE8F3; padding: .3em; border-bottom: 1px solid #369; }
+#titulares { width: 20%; float: left; border: none; border-right: 1px solid #D9E5F2; }
+#contenidos { margin-left: 22%; padding: 0px 20px; vertical-align: top; }
+#titulo h2 { font-weight: bold; color: #00368F; font-size: 1.4em; margin: 0; }
+#titulares ul { list-style: none; margin: 0; padding: 0; }
+#titulares ul li { border-bottom: 1px solid #EDEDED; padding: 6px; line-height: 1.4em; }
+#titulares a { display: block; font-size: 12px; color: #369; }
+#titulares a:hover { text-decoration: none; color: #C00; }
+#contenidos h1 { font-weight: bold; color: #00368F; font-size: 1.4em; padding: .2em; margin: .3em 0 0 0; }
+#contenidos h2 { font-weight: bold; color: #888; font-size: .9em; padding: .2em; margin: .3em 0 0 0; }
+#contenidos p { color: #222; font-size: 1.1em; padding: 4px; line-height: 1.5em; }
+</style>
+</head>
+<body>
+<form action="#">
+  <input type="text" size="40" id="url" value="http://www.microsiervos.com" />
+  <input type="button" value="Mostrar RSS" id="mostrar" />
+  <div id="info"></div>
+</form>
+
+<div id="noticias">
+  <div id="titulo"></div>
+  <div id="titulares"></div>
+  <div id="contenidos"></div>
+</div>
+</body>
+</html>
