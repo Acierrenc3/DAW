@@ -101,8 +101,8 @@ function crearNuevo() {
   return false; //Para controlar el envio automatico del formulario
 }
 
-/*Funciones para modificar los parametros, en donde se agrupa todo en try catch para controlar los errores
-Y se llama a los metodos de más arriba para acortar codigo*/
+/*Funciones para modificar los parametros, en donde se agrupa todo en try catch 
+para controlar los errores y se llama a los metodos de más arriba para acortar codigo*/
 function modificarMarca() {
   try {
     if (confirm("¿Desea modificar la marca?")) {
